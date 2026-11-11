@@ -1,0 +1,31 @@
+name: Documentation or example issue
+description: Report a reproducible problem in the published material.
+title: "[Docs] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic material only. Report sensitive disclosures privately through SECURITY.md. This preview does not distribute the AM runtime."
+  - type: input
+    id: version
+    attributes:
+      label: Commit or document link
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: What is incorrect or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior or wording and its basis
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal sanitized reproduction
+    validations:
+      required: true

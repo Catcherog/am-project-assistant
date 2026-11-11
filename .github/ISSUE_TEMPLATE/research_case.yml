@@ -1,0 +1,29 @@
+name: Research case or protocol proposal
+description: Propose a synthetic case, annotation correction, or evaluation improvement.
+title: "[Research] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What failure or research question does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Synthetic evidence and requested action
+      description: Do not paste real chats, identifiers, or private business records.
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: Proposed expectation, alternative valid answers, and rationale
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Provenance, AI assistance, and independent review status
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report sensitive information privately
+    url: https://github.com/Catcherog/am-project-assistant/security/advisories/new
+    about: Do not include confidential information in a public issue.
