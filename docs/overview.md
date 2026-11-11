@@ -1,6 +1,6 @@
 # Project workflows and evidence
 
-AM's intended audience includes project managers who maintain progress records, teams that discuss delivery and acceptance, and developers who integrate AI assistance into collaboration platforms. The current public material documents these workflows; it is not a runnable implementation.
+AM's intended audience includes project managers who maintain progress records, teams that discuss delivery and acceptance, and developers who integrate AI assistance into collaboration platforms. The repository includes a source snapshot and verified offline checks; production integration remains environment-specific.
 
 ## Workflow
 

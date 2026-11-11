@@ -1,0 +1,1869 @@
+{
+  "source_snapshot": "R8",
+  "source_commit": "f1c16435927df45638928328bcf097582c3c60bc",
+  "publication_kind": "de-identified source preview",
+  "runtime_file_count": 464,
+  "python_file_count": 449,
+  "deidentified_file_count": 66,
+  "history_imported": false,
+  "live_credentials_included": false,
+  "machine_local_overlay_included": false,
+  "files": [
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/__init__.py",
+      "sha256": "fbebee6954319b3b9a011f8e29486639760d535e4b9da33da120ad3ec4abe4c6"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/adapters.py",
+      "sha256": "a2a9bbf35d23e26ca7facb81447c09b16c489417b9e91a4b185d7b085f1bf7ae"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/catalog.py",
+      "sha256": "8df2b98f684767e1cb65f50ef3e5ea1fb9b82a30fa2bc11c5a9f9eeb9247fb29"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/cli.py",
+      "sha256": "0943b579a4fe7bcf37bf3465af86b8f9ffc7a3c884552e5f8ea2b54de5aff0d4"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/compiler.py",
+      "sha256": "3450bd223566712331a41634acf15d6bdcc5c48b720767635d21b1df2478122c"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/content_checks.py",
+      "sha256": "d8b019e32d89201e7a061475dbd4f53fdc6d22bddd988f9e61f896303a8acd0a"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/engine.py",
+      "sha256": "5cb0df5b9d666d0aad14ccc76f29242b8aa2f8d0fee9c4969a95832119c672be"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/evidence.py",
+      "sha256": "c945cea05c67d94049b76135723a591baf2d23158a3ff5c1d8bc6ddebcfc5026"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/host_bridge.py",
+      "sha256": "a7756b10e2ae7351d0055196bd1d100a39a370f8e5d3b60c012211d71e433d2d"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/models.py",
+      "sha256": "a3ae29da500b432b5482ad7b10381f1c3d89c400b124038cf02395e6ead4bc1f"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/rendering.py",
+      "sha256": "a60f7d2f9230911e05a21b69d2834cc83344d452e6d466577169e0d648a54632"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/revalidation.py",
+      "sha256": "0191cefaef7f286a2a463d05931cd791d93c5f13d2801271bc6a2f3bd92d3d6d"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/review.py",
+      "sha256": "215b3eba9ae4c7905e1b95e40536e9fa2e12d811e4d9251ced41d64c99ffce01"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/revision.py",
+      "sha256": "39071f847a2873dedb8bc27fa3d5c774d7674e418d6dd192c9a5a6cb51da2646"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/sources.py",
+      "sha256": "16a6ce8b51a6e27e38399d856d3d84ba758fbb5a0cc95cc11777bcf7c2cd617a"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/storage.py",
+      "sha256": "cf433da4463fe0354212a860c50b8590419104a2e7ec18e36f5caff5b4895230"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/style.py",
+      "sha256": "009d3ddaa1686b4fb8fb294ebbb4152470fa21bbf4ada0c50e27ba5593a65855"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_doc_engine/validation.py",
+      "sha256": "86b242d2855431b352064776cfcbb67d1cef2de9e44afbb0b9ae31b44324d6d1"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_followup/__init__.py",
+      "sha256": "90370da873124fc59c6c033e23845c25819b6dd030d815ec7514ea5b8fe13dee"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_followup/confirmation.py",
+      "sha256": "94cadba6bd1bf51a7fe170884bdd3aa15c5104fc667b49b4eb867d0be319f0af"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_followup/followup.py",
+      "sha256": "6bda1cb972731035327a625041d7124409021bff429a21b483fbd22f661510da"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_followup/rendering.py",
+      "sha256": "f5fa139de4eaf3e2833bd5e07b9c6bf8bbe08a8db47c22cfae0a0695096c50cd"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_followup/transport_contract.py",
+      "sha256": "44422ba5ab31957f6f22474e183f62574dcb49a7c7746c1e2ff160d3ebb01e15"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/__init__.py",
+      "sha256": "dd3e9f08e26c35df8bfd7088111a4e22071d51542748bda8e38e02c3486b0fbe"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/am_adapter.py",
+      "sha256": "cd67d4ea53127705b439b34d535bc22862c235d7b3e2640b8e4f442124f821fb"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/checkpoints.py",
+      "sha256": "ade7fd7ba92fe1ba2c8fabdbdc13c1f14dcd6dd4e484e825ee6ee8133b84cf90"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/cli.py",
+      "sha256": "2ed3b632b1494d2f1950b225dbfe962c152bc0f0c82fec93fb2c3b74135713a2"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/config.py",
+      "sha256": "aa2ba5c862cc7e18684e4912f7d59cd6448032c1c8cd315cef106ef3e0e02b27"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/context.py",
+      "sha256": "6916862cdded0e3cec2613f75e9dcd071a6bf5f79dc0ff63b17d8512f73a3378"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/controls.py",
+      "sha256": "25b8458ecffb59b99bf8bfa1034933310bb6871d9614138e754d148c87ea08a7"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/demo.py",
+      "sha256": "2a03d6c6a9ee2aaa2d269c1dbcb4edf2828adbf621861c7e65ec9b148dd68115"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/effects.py",
+      "sha256": "91a21b3ff765096b5a2296404f47cbed37d65b3de9ef7338c2ec62dc49fe3f1e"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/evaluation.py",
+      "sha256": "97ed6cd331bfc0a545530c6a8640c7ce4f86814cf20b84db3f23374d6123999e"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/fastpath.py",
+      "sha256": "df6e9f66a84b4d5a9637db0783090b440ff8753b0eec38ca827d36e2384563b6"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/history_adapter.py",
+      "sha256": "5cf9600aba292b49a6a1742b5af914e5656eef38f71678b0421f8d5148e1cf75"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/host_context.py",
+      "sha256": "17839732c90d8fedcf9916f613bf058b5aa28d529d3e6519b661f6e6dc2675f2"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/host_focus.py",
+      "sha256": "9e61280f8453b15743940f98741f3ee5e1c537d2e164e5357847bc5a90d6e15a"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/install.py",
+      "sha256": "82ae0981a9e72ac87e617d3bf2bacd03a076729f43d13f99ecf5d6656348ceb3"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/legacy_binding.py",
+      "sha256": "af76fcb0e2bf45a1e072f56503d48c6b9e016f0b7502ca072f75d66c9f6b46a4"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/registry_adapter.py",
+      "sha256": "8a24fbf76eadf2ab0008c189ded8cbd4dc802d04faf4f7f6c8e5c94f8a51ce8b"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/reservation.py",
+      "sha256": "238546ccb1134ffecdbe96fbb0757d05876c1760d83b9edded1575cb69c1b016"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/runtime.py",
+      "sha256": "4d1364cc59c0baa366951110700dd20ac260b163822dc2b4af8557e0a6c51319"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/store.py",
+      "sha256": "24083eb8faa8c3a093d3119b5daffb9446ac0579d42ab5af9163ba166103c912"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/telemetry.py",
+      "sha256": "ecd2da48a1c927cd7d7e6a78c8942c3c31e3ede4e1b3a27a8db16ec025357650"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/tool_policy.py",
+      "sha256": "5a350f6c983967e2ce66b1d5edddad2ba70450341c6d48c455d1069cb31e7cd5"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/__init__.py",
+      "sha256": "4bc1a2ee7a3b9f67506cc24699cbc15093118a4af3f18db1495c12b911ff0984"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/action_items.py",
+      "sha256": "71e96624fb5c7e91b34d4511378ad8a65245b268b114fa6e9f260360ac21f990"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/api_worker.py",
+      "sha256": "c93f6fe775d422c80c3eda405c9fcaeb2bd08a8ef854573d1149f3458bc3cc6f"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/attachment_parser.py",
+      "sha256": "adab226e360cb1c590c764f379717ad632435b259856c67d8d06358935c53f3f"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/attachment_worker.py",
+      "sha256": "052c7056115254974288738b6589afad51611f69a5832ca0f75de74a2a212f6a"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/business_port.py",
+      "sha256": "a975bfbd87465e9565aa8f8f057a2e098b42387f6c1a5e2f8ea32fde0edbd6f4"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/card_ui.py",
+      "sha256": "b01331fd6e5958eb07711f61bee3ea434616c13e93d1b92c1d004ff4bc364ddb"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/cli.py",
+      "sha256": "165a73c3c692c960d54d71ffd97fe0ac131b53356d9ccbc02855b4ba47beffbc"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/config.py",
+      "sha256": "93eb1dbd5d69040dc4ef9de3f17379df35552c257cb455f150d1bd8a2452078b"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/doc_logic.py",
+      "sha256": "cd73483a21dacb17026a4c33517a46551fbe52ad840c4ffb2a4523abc99dd5b1"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_delivery.py",
+      "sha256": "69224b9d96501a3a004bbed229cee2a121301d093441819f797b0b0704949f31"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_evidence.py",
+      "sha256": "0f6fe0e659295cf5099a66c67da5529f74dcaa3e6d1a31f5d893f5fd4dcc8679"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_mapping.py",
+      "sha256": "f712a995d83e2c89672a860cbb8eb829997e1edb85220272829c77fe14530cd8"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_native.py",
+      "sha256": "152a914830480ddc47b7c82ed5c2a3adcc29e144c77f7f00b51476d8fff67971"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_sources.py",
+      "sha256": "3eaa0860b2cc7e9d785e72a696115b797cbe8adc8210446c91031ba9337a6ae6"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_standards.py",
+      "sha256": "6df184cc3a93a5a7781c494aedd6b56923867cd71d48a28395c353f48da23af2"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_target.py",
+      "sha256": "a8d1e6f3a794f39d341ce0bcdd158f145d6404587e59b6afa7f6be82131b7950"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_trace.py",
+      "sha256": "6a2c5bf0af6bc0d39944f44c608091fe8a0ca9687a45c095f1759336cb259ec8"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/document_view_binding.py",
+      "sha256": "35ba0978bdce3d398c30f283b27270f50da5a03d7ec7dcd606ae9aa51d734228"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/embedded.py",
+      "sha256": "28ba8d612033c7538465f2fe08c1df0b52c98acfab585679ee2ac31300938f05"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/feishu.py",
+      "sha256": "09bb0d464519ca9c68275192a2cf68c0f4732c27d57da0b2bb2a2b06c3268a5c"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/gateway.py",
+      "sha256": "616727f04030bd678e16c32b60ac81e4c2e2e8f6e572cc0600eda1379c830107"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/ledger_changes.py",
+      "sha256": "2386a0c5196283d9c17230a7cf2c3735eebed81d505f96cf52f023262275393d"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/local_api.py",
+      "sha256": "2081ced954d0b1dfc932996e3aa55216da46cabcee01faf7fcbcdbddf79cb589"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/logic_service.py",
+      "sha256": "33e9fd0ae7a020b2cf6b72b67c7ce9fac205d86156f0415e24c389a7bc6b1288"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/meegle_port.py",
+      "sha256": "cbbfda4e38283f6cc091026a08f211af4a7a47bba609648989e8e35065014454"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/message_text.py",
+      "sha256": "ddd3890fac97382650b8fa7c345c144e94ac7d8f5ed4d35e5deacd475e1b2167"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/model_coordinator.py",
+      "sha256": "ce7dd42e50cbf6befd2af3dd41b37276eab53ffed1e0244df5a1aca5f99735f4"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/precheck.py",
+      "sha256": "2cc9513085da9c6854c1126b612e717ab14dd2a378ea5ae26fecd90349bbdfb1"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/presentation.py",
+      "sha256": "d5c7e862ddef8aaf38aec11640cadd2dd9005bea56a3d4f3bfe50878bc9bde3d"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/project_catalog.py",
+      "sha256": "23772e84a0e3da2b2453dd0f3df8f19245cffb0a53b55def558db0c483b56f1b"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/provider.py",
+      "sha256": "2755bb287559b101ac67cceeb3f1934e4b0f2c42b80724db3d8b40c59c5f48e3"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/question_state.py",
+      "sha256": "ab0b430033ff9400c25bd163270ed9a33354702a60b8e61288ed3572e3cf501c"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/qwen_provider.py",
+      "sha256": "c11a93e51281a98be789bd3db0cc714c37e21465b3e688e63bcbaaca72af300b"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/reminder.py",
+      "sha256": "30e2529061522b668b6f1f5dbeda62dbfdee09ca4457af485a90614c49c7e95c"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/reminder_content.py",
+      "sha256": "b670b18eab7f6ad9b6a57d02b414bbf1730217474e59fef6c346f81c2b7458c1"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/reminder_feishu.py",
+      "sha256": "662e6737389552c6d6932cd8dbcfef0f98bc0979db24b1f6041371f057f4a3b0"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/request_timing.py",
+      "sha256": "c6a5848b182ef3fb26b838910e0ab6e8638a794f4ab6ed7bf349621270cc0d17"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/scheduler.py",
+      "sha256": "526f4d4b201c17289a830b313f14cfe9ad6f6419238a988506e60edf1bc78791"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/setup.py",
+      "sha256": "839c68e7e154ab5cdfd9d385d7d5dfda8fb1ba74b628724dd7b6bed66f9bd6b1"
+    },
+    {
+      "path": "runtime/FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/fs_agent/store.py",
+      "sha256": "9e3ff5a7e3de0529f769f527b4dc4c236846bf4c2b6fd708e54d7451553d4d0b"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/__init__.py",
+      "sha256": "7fa6d98f5cbd6ddd52bc1a171c6e580c5bfa922d3648f118c9ba9e9f4d5bfd32"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/__main__.py",
+      "sha256": "fc0c95786449418a7e0c79d10ae4a6a281b8c1e24e6c5981160215a0b0f749e6"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/briefings.py",
+      "sha256": "98b0012843596360d4a2d04e433558694a6e24f6648ba5a31f5ae74c0f27f99e"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/business.py",
+      "sha256": "166aef60f63ee798cff3216ae11582ca0e9ffbd288921d57fadd99738d6e19f8"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/capabilities.py",
+      "sha256": "d084e67ff6d64bc6c1e2037f130e155ca5b9b19c8c0f25879c1ebef25d675d8d"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/cli.py",
+      "sha256": "f66efffc1b7de57de43248a6e254b9444850214fdfbb914c4b871612a1a9b80f"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/documents.py",
+      "sha256": "2dc4bf682a8a8e9f022ea994aa377dc9544216925f6faea739458d55ad9c4f11"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/engine.py",
+      "sha256": "cebbca11aef45df3e4bd4cfba56e2029ee79d68d76a33c9f7fbdf439d4dba58d"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/evaluation.py",
+      "sha256": "a2bad5850f1c6f6f7919b1784687c67c9ccf4c9ee0bcb6d3e3e38a654b2764b0"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/followup_tools.py",
+      "sha256": "4912a759ab95199fc7f7ef29b0c464c5fd1c454e57ebd1b0e7f32f7ce284f79d"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/knowledge.py",
+      "sha256": "ab65c95d64ab9ad93908d8312f08557f6edc4e6eca83f67a6aeb5353c1458ed3"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/learning.py",
+      "sha256": "d06132b327d11b77d84887d0041da2a6686f544fb58610423095784458cf9766"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/legacy.py",
+      "sha256": "4733ab9e7e14b114026a2225e379e12081a3833be01a83f5f58f866569678be2"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/metrics.py",
+      "sha256": "b981eed2dccd2b004861242b0b089348301b60a502df3299072d7ad927fe3a6e"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/model.py",
+      "sha256": "3ddbee7b3b396d28e2c9f16e47168969c7b47849d838da7c5d664f9109fc9d29"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/output_rewrite.py",
+      "sha256": "c7600de93ca97196390ee13d3a28be19b59e1dd3d2e65f60b1ac4f27e70fe02c"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/prompts.py",
+      "sha256": "89682d607e5e66190430cba6452922c067db5425f59fae2b26f527336caf21d9"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/reports.py",
+      "sha256": "270cab2cc72dd6166e865210137f1014e94bc5ef461fcee161714f74fdbab98e"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/rewrite_host.py",
+      "sha256": "c43b5eb7b7b68eaa901311bd3b296049ffa1dec3c7836c763f72d1946fd88f82"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/store.py",
+      "sha256": "fca4671dd3d9b77c9da84e2bda8012d88fae4f149713331c1e6ef454e4235085"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/terminal.py",
+      "sha256": "869a6fe4b355017d5f9f96b2f1831c894d70c80e69f3b0092e4708f56834b4fa"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/text_ui.py",
+      "sha256": "0158fc8e5818315e5572175ce43acbc1a6a4fa566870d94d91d425c38ea190ee"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/tools.py",
+      "sha256": "a46d919e1995a53e3f02a9447653154263e011d894c8c6227d0ea7154e468e3c"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_conversation/types.py",
+      "sha256": "6d9dd14cc06eef3021e97dae36b49bbe2ca01f4d36e364bffbfeb51ed95cb244"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_outcome/__init__.py",
+      "sha256": "5b22c77062cce51aa941094670287cf87e7eff1f89a359eca039e656d241126c"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_outcome/adapters.py",
+      "sha256": "5ffe7dda236864c7b8aa1c7ddfb1ae493a171aa1ff88b446a32a0615c7e33419"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_outcome/completion.py",
+      "sha256": "5e1ad672f11b99f8874673853fe384a69469f77e044eb85f0f050c3697fda6a9"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_outcome/dependencies.py",
+      "sha256": "7b02bb55ea20e73f708bb91f151cd9a4876194ada25c921c14fb5f4e5a8104a3"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_outcome/evidence.py",
+      "sha256": "ec73be6cc236e07844659c978abef1d7f533b3e4fe794e4eedb7100d7ec0311f"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_outcome/goals.py",
+      "sha256": "c68a8382758f25829c312dce5a1a183f2d4c726a24165d9dfcd6ac0b3024e79d"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_outcome/types.py",
+      "sha256": "8b3fad4cc1c714eb07fd3cca80e3a40b76b0207a2c61b039cf99694103019409"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_reply/__init__.py",
+      "sha256": "8d5c2b94714c70b735bf7d91eb1bbb43fda7cfd115cfd1d1845dd8ebccc1c255"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_reply/compiler.py",
+      "sha256": "2bd2e66b2539ab96db8864eefa78d86e04d3304694941dcb56e1ffc6f2bc1150"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_reply/contracts.py",
+      "sha256": "4cfc54d4b25bf5ff752be0e795477531e1063d9654ee626fea522a8f84903999"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_reply/examples.py",
+      "sha256": "20b57c4977e90c45247d21c386e5635453771f95c9213af660267158f73545a9"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_reply/model.py",
+      "sha256": "82df67554e211c14ede10bcbc079dd812503fa4b1706c01ccea96f2adbcae134"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_reply/pipeline.py",
+      "sha256": "dec24df08f4020bf7008bfaf99b027dc21f17f28f0caeb17850550bee4951de0"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_reply/types.py",
+      "sha256": "ee6c8be30b52e59b6515256bc2d0c1b12afb65d05d9c500f1541d63ce6b700e3"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/__init__.py",
+      "sha256": "4f413ff3e28696b935f612c7505461a27e5662e9f4d7ac553c251b2cdc939ac5"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/channels.py",
+      "sha256": "46bdeed8b0e9895fde01d518049b005cac96eebbfd3df234b8ead1446c862db3"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/coverage.py",
+      "sha256": "38651649f851db97994ea09d8861ad8749382e19788cf3fd3dc31db14399ec9c"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/evaluation.py",
+      "sha256": "4476ffe675262a54ed2c5492781a55b330e91fc183596ea7d2935971547854c9"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/gateway.py",
+      "sha256": "9986d6b504d72f4e7c0b98418e3544872dec3caf2c6f4f3db934b3f289ced413"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/pipeline.py",
+      "sha256": "bd7e0ea7bb6e88bf9aa8f943e9f29a1a62b2bc319c7c37326a3d6b308f5072b7"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/schema.py",
+      "sha256": "3dd8ef6458b5a184c77666a066b7bc97fe9f31bb9509096effc54ef612bef232"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/semantics.py",
+      "sha256": "07bf3eb9cefae22717206efd30e06f6a7bab277768f6e1a6fc0a7db35833f6f5"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_response/topology.py",
+      "sha256": "d6b93f048db3afc3e87cb0cc6110fea3df50b78e95eb8b4d0bad028eae699274"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/__init__.py",
+      "sha256": "c90a1dd6c5c39895f0b9edffda8fb0d5af44cd840c266dae92ed9932d9a8d311"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/codex_isolation.py",
+      "sha256": "fdcc52a4f0a1049712561dc5b7748d3733e30c3f3aefd2030445c8bef88a13cd"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/contracts.py",
+      "sha256": "491ec4b6178595ba0ed0085351910ca143b828b5dea8832b90c518f2836fe435"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/data.py",
+      "sha256": "918f789d3e5e270ae1ff5b3296121d9925de17c4d5e7babac7b3704e31ce32bd"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/evaluation.py",
+      "sha256": "9ed30cdae5e72884414d0dcd195a8f3f008fb26bab71cfbb239480015c8f47de"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/followup.py",
+      "sha256": "cfbf7f6e24d4a92cf362fada4fe4ec09168e2aa6c3b9ef7ce55f24271531fa6b"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/integration.py",
+      "sha256": "f7d690a2993c765ca375df1b8b78def027d2fffa9dfbc21903abd51a9ec6e78b"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/latency.py",
+      "sha256": "0f32e77d753e42c5e0867911a3a489cfbb886d36b8a7ae1127b01d94fd097142"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/natural.py",
+      "sha256": "3b3a7739cb64a2ec505b8e68de858d050f5f2b8120fc81a266e51a1952c77704"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/prompt.py",
+      "sha256": "dbcb85423d599d68d229403bd91b3007c6eb87053b8b1fc01b37be4a597637b8"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/providers.py",
+      "sha256": "63f3430ff93b93d3c8b916e6300ebcf065a2efed0bc65e3c15422004ef98e192"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/render.py",
+      "sha256": "a5c83dde74bac2d2f98f688858d07c6de7cef9f1914339906903d48e7a52a22f"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/review.py",
+      "sha256": "ce131296832ae9809ec9a065998bcca0258ea4414e2661356685bb0d8c13f859"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/runtime.py",
+      "sha256": "add1dda5bf9ac00115a5b4902592875db18c1e791829c32dd37c69688994537e"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/silver.py",
+      "sha256": "7fbad78ebe605817302f56bff6060d97a780d88b40f6fc42aadab9f58fc372da"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/synthetic.py",
+      "sha256": "9f2b2d2d19019ec89acad9dc46c0000fd34e3af3f7f84888fe68dd50ecc062af"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/transport.py",
+      "sha256": "0d4be219b1d416689683e5302e613307963e53b5fbab68be582a88b37b490eb5"
+    },
+    {
+      "path": "runtime/am-conversation-r1/src/am_style/verify.py",
+      "sha256": "98f49d00459f97a57f9bf12ba1bf0c7117ad1cfd0ebe4fa699367b0531cf59bf"
+    },
+    {
+      "path": "runtime/am-grok-realtime/.gitignore",
+      "sha256": "f6b228e652a56584f0c298fb331d5569c101b5705d3b9563412aa2c390e9726e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/evaluation/example_cases.jsonl",
+      "sha256": "37f42e01a45b80f99f40bd0f3c7f719286c3abf3e76279721adb840a373cef04"
+    },
+    {
+      "path": "runtime/am-grok-realtime/evaluation/example_offline_records.jsonl",
+      "sha256": "4782eda939d27a206e0f919ea790086c5ae3a8dcc819d7855317c2d86f9bed39"
+    },
+    {
+      "path": "runtime/am-grok-realtime/evaluation/r6_cases.json",
+      "sha256": "6ea04595fc3ef997e4b2a12050ace7e28f9c27ffb9a9461f02b8cadac75b673a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/evaluation/r7_cases.json",
+      "sha256": "ef8a8a5b0e3d8c794e8f99aadcf292f3ebd926fc4394c3f9ee7368884010460e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/examples/phase1.disabled.json",
+      "sha256": "53ba0a226de28848777229f273e4e133beb6677ab831b63497e4030fe76d101f"
+    },
+    {
+      "path": "runtime/am-grok-realtime/examples/r2_config.example.json",
+      "sha256": "be0455521aeb1121f7ca4aed79f07fe8623eeb470bd0d397cf0a644ea4fe7de7"
+    },
+    {
+      "path": "runtime/am-grok-realtime/examples/r4.config.json",
+      "sha256": "1812d5474b85671954e0a4baea6582363cfde5a4410a92fe676f1418588d8249"
+    },
+    {
+      "path": "runtime/am-grok-realtime/examples/r5.assistant.disabled.json",
+      "sha256": "5abaf0304454490c1aa79f09dee8c40497cecc7773fe784e2cb8c5b11a3cf86a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/examples/r5.owner-cli.json",
+      "sha256": "1e903a0cde1de6fb01e344f2f59feb83c2dc017d80e9982ae6d916c1dccd5274"
+    },
+    {
+      "path": "runtime/am-grok-realtime/examples/r6.fast-reads.disabled.json",
+      "sha256": "cf7b28b91e480f0b3c4cb713f1b4044cf3b8c8f073b3d56561702f21f21b0cfa"
+    },
+    {
+      "path": "runtime/am-grok-realtime/examples/r7.assistant.candidate.json",
+      "sha256": "df39b3c5bf690e301be32f7a25f3208859b42e367523a6e64194311b8335f029"
+    },
+    {
+      "path": "runtime/am-grok-realtime/examples/studio_config.disabled.json",
+      "sha256": "5658f91b90e41afe784934b3db448ade75fae39cddeb20ea4e931b9156f18d64"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/__init__.py",
+      "sha256": "2cf526442772ebf1099169376141319436906b5c86328802dfd6c248fce35c8a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/am_grok_host.py",
+      "sha256": "75926aefd932cd2abe316d351614e3f048ff6a66a1356ec2386a895de5e785ba"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/am_multi_ai_host.py",
+      "sha256": "e49917436174374b49af6fbd9aecad35b70cbca53a236a4cc00dcfefcd42cb36"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/approved_command.py",
+      "sha256": "203dfcf83fa894078bdc4e7bc6996c6e2020b1b4d09b164d87a4dc04770e9b3b"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/assistant_evolution.py",
+      "sha256": "0fe47eb56e82bb3496fd00df5fc451b9f09d284fd96cc6805cf2486cbb272a82"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/assistant_host.py",
+      "sha256": "c110f8fbe9af14bdbe47c75a264b777be328e5958540a02a31cf163e66f16b90"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/assistant_identity.py",
+      "sha256": "5f7b6f72b99896155c493f2c372ccb88cba5415c4950983ed049395c09cf26cd"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/assistant_intelligence.py",
+      "sha256": "ce327e75375ec269fc731a64473218f85ca0a73172c86cc4b83898c9ecf638da"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/assistant_interactive.py",
+      "sha256": "5c362e29b65392c6661e30c7dde245ac1e8dd228da37e7f0f2f6694089ddbde5"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/assistant_maintenance.py",
+      "sha256": "69d4a2071b4fa0bfcea2b459b5827f899c49173e4020a55693a1e7a2730f72cb"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/assistant_queries.py",
+      "sha256": "9c3a0ad2e1c8093270f62e0c96871c6093b361f1b41d4845df8b03298de3ffb2"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/assistant_rsi_replay.py",
+      "sha256": "f2f32f02caa51aeac167b1ad8700054f3c0b55f960aab276ce0d72cfaebb90a7"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/full_runtime.py",
+      "sha256": "3c64bd9c644674afd73170333ac0060365732f069cef2fda2c312dd2e06aff27"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/meegle_executor.py",
+      "sha256": "1ba504242cba5af618e273304b758516637b8af78dd7ac374f4e0387e6229b88"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/patch_r10_bridge.py",
+      "sha256": "0c37d4afe10eb498fda9254faae053145d00b521a00fa23948ab4fd576d1bde0"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/phase1_artifacts.py",
+      "sha256": "6728620c51d3f14c3fcaa8fd34e4b097729fa45eba99373a1cb6e38051016669"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/phase1_collection.py",
+      "sha256": "48487a41e0d7f6bf381cd8e0eb221a9f7bec325e27b33cf1d86cddf28a025dfd"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/phase1_runtime.py",
+      "sha256": "695eb9da1a4caad380a959e05ebb38124b01ccf9cc7248bb22904aacbc5f8097"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/r2_runtime.py",
+      "sha256": "ded5f2614d6fdc335947b8990fe60ff1b1b31e01d723536f949e8cfacc77c2e1"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/studio_agent_models.py",
+      "sha256": "f04354d0897a4d5e97bd108fe4f1f4600f03917aab242e6bf51bdefde85405b5"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/studio_host.py",
+      "sha256": "f63f259167c49b4fbd0bf03575123f7d10888912a844cfacaf366d6307019753"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/studio_phase1_factory.py",
+      "sha256": "44f8842bcf698ced5908b3762226aa89047fe8e43efcb762f455ab4a54bfaf46"
+    },
+    {
+      "path": "runtime/am-grok-realtime/integration/studio_phase1_snapshot.py",
+      "sha256": "bd350307f2183ab12ef0bc4cee6b457aa4d6f27e82e74aed64ed23513b8e07d9"
+    },
+    {
+      "path": "runtime/am-grok-realtime/pyproject.toml",
+      "sha256": "975ddbcab40d47b9c0aa7bd2dfcae6e0e002529b4837aad27e1de45bf7570bed"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/__init__.py",
+      "sha256": "0936391b935521334209dceec91b0a6c684fc9d1891125209a3916882c570e80"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/__main__.py",
+      "sha256": "6243713b7e69063df56bf0025b9c4b54724676f28aa6a58925c38c71fda9dd81"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/adapters/__init__.py",
+      "sha256": "1b6c33e1148854fd5c74545220588cd9cf0ae86e3cb343cff3956494b9349478"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/adapters/base.py",
+      "sha256": "d018b6b57c07634b2210a2ccf9ebc27b67b58bbedda4963613921c2d653bfa3e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/adapters/callable.py",
+      "sha256": "7e5f837c6e969ddb46c5e97194495f685689ffe942d3a60988063052b24aa6ad"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/adapters/http.py",
+      "sha256": "166141ecf56668872d8488b86556391b66530a143cb158a0f55ff8557001c061"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/adapters/ollama.py",
+      "sha256": "468df8f228914d2078a556a53442349c57009f436e1107e048d0ef9ecc9a4560"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/adapters/subprocess.py",
+      "sha256": "7b658d1e884deda6299c3d30c40ea9396b3c99da6a70f2d9833cdad3a10b97cd"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/__init__.py",
+      "sha256": "5133055cda7ff9238777659baff4b4dbce1bfc8617273385ac2bb7158e57ff6f"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/actions.py",
+      "sha256": "d7bd592493b78d1b7d96f52f6f65634160a59ee58fe9db78f790877f03fd4103"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/autonomy.py",
+      "sha256": "1947fce39caeef22e661eb7f8bb0cbce50ff71e15e54e08d0cc9b6829755fb14"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/cli_worker.py",
+      "sha256": "749466d8cc348d24e1dca4875ab788d17886d918395f5eb73265d99a76ff38a7"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/code_optimizer.py",
+      "sha256": "3b0317e7fee44c0a2ef21f80e92ddd29ff065b346cb79cb767b12e86aa33cffc"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/continuity.py",
+      "sha256": "45e82196fc6199c59d73838cb7cf4ddc906dab27c6fa6d903358e8298ed774b8"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/coordinator.py",
+      "sha256": "90bc7863ce501ee8f3b699ae80b7a76d84a2b0a8470734b1c5d5916853c4e2ac"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/evaluation.py",
+      "sha256": "36dd93a9310307fe6daffc1902d7467b6db6c2a97838ee0fb56e634cc8258710"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/evolution.py",
+      "sha256": "56b7988cbf809d0dca2c7aa362d212708a852a7bdcfdfae0615855016fb27087"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/improvement.py",
+      "sha256": "9a1fcb7438eecb6dcac7ada01479ecfaac9784bdea3dabde4b48342bb0e6d7ac"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/intelligence.py",
+      "sha256": "5cc71247624eeba18fc414993da783541b74075f443dec97635e52b0df604add"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/interactive.py",
+      "sha256": "78cfb6344e746b50fc7ad21ee031f945b1ba652cc08069face84572ba290e73a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/policy.py",
+      "sha256": "556f06da9c703586b77958ceb94fec2b017477b96acdac181fc233475b01b157"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/quality.py",
+      "sha256": "2e8dac8d446a30e5a4e95771bb1d9820cda0cf217ab7bfe71d767864b56e4472"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/reports.py",
+      "sha256": "9bdf453c0b94c76ab2166c15ad6d4d160b331b8e1bb0086ab045f649874d1c13"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/response.py",
+      "sha256": "3a02420e7168c4e2df6ec66412d08f7890b60ea1770dd7490166b922f2c1a677"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/retrieval.py",
+      "sha256": "1d038b1415056a6d48c5dd12e2ec7675ae881e06b7bf0a40331622cf03e381b5"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/telemetry.py",
+      "sha256": "ae4882115d146d1fc749e26168a6154ea7926bb869c55c1e8d9b87954f82d1a3"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/assistant/workbook.py",
+      "sha256": "4b119af72bca06d77e7b6302c8066061ee762d00e08068a89f82019a81020539"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/collection_service.py",
+      "sha256": "c0e0aedd2b252e04e243ba1daf6483c44b16dde0444ca678aa83969861c82ae1"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/collectors.py",
+      "sha256": "2d90e62cc00c8f57af1144286f7f2a42a8d6b2cb5f5b20a350b322e88f381346"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/context.py",
+      "sha256": "fba9a9320289e0dc211a7d59b6118f5ea15308420fc17d66fd3482a030438e42"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/core.py",
+      "sha256": "def2c2c89171a88e0f626e581e32a098d3a474281e4d24affa770a32dbe6b82d"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/discovery.py",
+      "sha256": "6419f3c75ae35e665274f6cac63ae174d2efc5a40cd74ba7f8ddc5eca1e17383"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/facts.py",
+      "sha256": "2e1ea9b971b7007f4b3f28f6105f1b8a013381823c9318a83b4a95a544f99dd6"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/feishu_snapshot.py",
+      "sha256": "e29adae31e9d34c8d0d07333309dd23a1536cd4a34c341aebdedd7eec104ecb5"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/http_server.py",
+      "sha256": "e6e17636b60e0484e0a59c3a84e409434d9aa50eb13dcb669b273b9d1ab01520"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/metrics.py",
+      "sha256": "e428b82c384b58a8e6b6e6bef3e81d22436bf514e83d9295489531b9e77b59db"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/migration.py",
+      "sha256": "6afc72f966b913b1be8159c29bfd5252b1fb8ce7ad9e63c32607baac0b3eca22"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/models.py",
+      "sha256": "36059fb1603c246133f036b99fce7dff44b3bf0d8a0b007fcb747bbcf00b5f52"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/normalization.py",
+      "sha256": "3ace768a1d1994b897f31ec7c34a5514de3e5b1e4b288970a5e21d078e40f731"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/outbox.py",
+      "sha256": "2e034136072a4b3acbe56786b19d07912af80b3e047d5702ba5da69965f2cd2e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/__init__.py",
+      "sha256": "3c64326d2f495f28e9abbbf62567cc042f4d0724d50cc97b0318f3528620425a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/agents.py",
+      "sha256": "6838abb54efb99b177f01cdbf691acb3e43b849c4342c4665c2bd61dacf501b1"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/boundary.py",
+      "sha256": "e7b838fe19c1c3d3c912628211769f32c2f6ea7d710633a594f3b325983a44f3"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/contracts.py",
+      "sha256": "349b3ef1ba9e6a881f52a78d5077494ca50cd3921365cea5160eea540afa0ac6"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/control_api.py",
+      "sha256": "707a516f3103253ee608438bc42d0c341d9a3a61cec32ae4a903981bd5801c9e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/cutover.py",
+      "sha256": "7897cc34172aef5dab17230f8a1c2a1e1d690f9ab0fb7475c6cc4f9459dea92c"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/execution.py",
+      "sha256": "8c8a1b9b9023be14bef300460764d391bba22e8280cfd6dacd00e8cfdf62be8f"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/information.py",
+      "sha256": "252d8619112c4aafcddf28ba43167ebe7a944bb963648529fa356a1bee6fb3a2"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/lifecycle.py",
+      "sha256": "2eaba4739d0b98bacac6388539124bcb3da8852907b513ff71eb962659db80b9"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/metrics.py",
+      "sha256": "108a568d160912ca656aad480bff9ab9ff991e7c51405e772f16be8bc3e4d4c8"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/receiver.py",
+      "sha256": "2b43525b825782b9904e6e378f30fe7b0cb492940679e589e6b2d6ed3bfb5a62"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/references.py",
+      "sha256": "08e3a2f2555ab8c50a98dce23764b462982cb07e31fdd611fc18a4eeedec0cc6"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/routing.py",
+      "sha256": "48a4ba2dcb1731282eed998da017d91d6c833199386ba353f260dd87a86e32f0"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/runtime.py",
+      "sha256": "1e603c36e22caeda1f19fe9d571b8fae08e2b169e1d07d809380098224abf54d"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/service.py",
+      "sha256": "1a8d5a2fb901dbcdae654b1f7adc2525c09bae97cd38cb4f1b9d50a84fea64c7"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/storage.py",
+      "sha256": "9e3871443150c210a4f033788c93bd58d3c4781bc931b3f0c47a64326bf94262"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/phase1/terra.py",
+      "sha256": "fc26623c35aad8aa98b4d76a6dcd17fac3539a71a0bef214a6930b9f236d05af"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/policy.py",
+      "sha256": "fb7c846b7847019b6285d37f325cfc3b96688fc2c82ccb3b9452caf827a907a4"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/router.py",
+      "sha256": "31fdb01963918f8be082fac9bf32a04fa28ff1646923924193596ff4a15c1262"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/scheduler.py",
+      "sha256": "bfacb8e476500e29aad569f6153e533410297f50b9b330404e716f48c23c6468"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_gateway/store.py",
+      "sha256": "00e2250ec9e22585cf5b56bd9df23a198d2517d2b17539b33a91abc208c0492a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/__init__.py",
+      "sha256": "ae58b8e4c6f12ec1635cf9a085ae25daf229d946a18d7f7333e730c1c55a94b2"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/__main__.py",
+      "sha256": "e73e92a9354776f29a0a6d2cd338467da1c6837b38e34a6d8205cfa1b88c8e61"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/config.py",
+      "sha256": "c13258f591ab8854b435ce6f8289380ef9512cc5c9a7ca476184c9e9e3f22ef2"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/core.py",
+      "sha256": "ee48eeaf3e8aa0c0bfe3e483bf3af1916eb02ece5a840dc1866371fc60603d63"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/http_server.py",
+      "sha256": "74854dc8b38be3638299d6ecae209de1b362240e298a32db8a2205cc48a3d985"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/metrics.py",
+      "sha256": "e86d07222885236b19dd9332eb094bb03ed711c2a594b470e82b692a63ed6d34"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/models.py",
+      "sha256": "c7307a42fe77a60530311f925d42990b55cc0317f1cf8a7f71f01068cad50e49"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/store.py",
+      "sha256": "b698051fb6a22b4a44ebf6404813617cce3b87c5b9c5d1f221f4c950ac62ea28"
+    },
+    {
+      "path": "runtime/am-grok-realtime/src/am_grok_gateway/transport.py",
+      "sha256": "b3d4468abc73da5fd55374f56e53a42357e9e881aba1ea1e9a4819775280f155"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/fixtures/r10_control_parser.json",
+      "sha256": "c6f0587bb3311257a74cba347dee8ac5b489176b62e0985f73296daba50509cd"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/fixtures/r10_control_parser.py",
+      "sha256": "51329c35050e1b35cea600f84bcdeebe672ae77bbf9ab0e0bdc07787a159c6c8"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/conftest.py",
+      "sha256": "4f8ab3e2401528a601c790765949b33d46f2a0f7775f0e0caed778f78d1e56fe"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_integration_and_recovery.py",
+      "sha256": "679b8ca3b1fa1008da7848581d0a04708453edc19b81119d7c9e0562396ab0a5"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix1_authority.py",
+      "sha256": "323544e2268a8df9c5fdcd07a0adfb2cbca98fdf6d3dbc09d52dc1f535c6d6ea"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix1_lifecycle.py",
+      "sha256": "d8d32eccf5e669b3deffad85cce0d9fd653f88ff706c993e2eb1a790dfb2a7c7"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix1_policy_race.py",
+      "sha256": "4b2eb4c87e5f533d2df6dc530ed1913d3b9ae54fa3d6473d18ba0a5dfa141e7c"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix1_recovery.py",
+      "sha256": "cf00276b37c9eaa234471b76e2cdb40942e9a42e6fbf437d964714b7bfd26613"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix1_routing.py",
+      "sha256": "7f9f70f8ab46b70a42822dc8bda87f64672c980af8dd997cc727531db4702a4e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix1_scheduler.py",
+      "sha256": "091e3ae1325df57ba0c6d0da5729ad10b7e5d49ec66125cf7cf5198a3740646e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix2_authority.py",
+      "sha256": "68df2a0b558deda56d004772e63ee78e3bc63ba00aac1e91c6dd024f783fba5f"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix2_snapshot_status.py",
+      "sha256": "4322665517186fcd26526376ca257262931ddb2fb5a3f5f513bc5d9ac5ae02dc"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_r3fix2_snapshots.py",
+      "sha256": "037bd583c8558a1fab2c7ffd05fec095756a54a258616aaaf0e585f2358529d3"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_reliability.py",
+      "sha256": "c96e1e718f84b010054d2c13466d88f7ce6144d0dde075cb88cfe2b279b60ad8"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/phase1/test_scope_and_context.py",
+      "sha256": "407b9e1a8957d8f97a5f106dd1ab54b337ff3e9ef942a65e425a745f956dbe9c"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_adapters.py",
+      "sha256": "161a954a7a47e6660f67fc0e398faaca2955a9b3955c979c98f030c5f35b6628"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_adversarial_review.py",
+      "sha256": "bdec06c6ece62aa17119f835243141beade8f7e652fe198c710c8868aa7c6ece"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_collection_service.py",
+      "sha256": "ec5059723c6604f9026a599734b582c8ef1195a92622a0f557e6acca1e47bbde"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_collectors.py",
+      "sha256": "8d12160509b343371e80a9c10cb6541afd6cd605b175bd05c42318d1044cb05b"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_final_boundaries.py",
+      "sha256": "523ad091bffb00de5f224828b87b9a5d27e5ee74f16ca1fd75a32846a2172711"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_host_runtime.py",
+      "sha256": "f02239a691e08ea06a1d64f0f899bf58d28a51c93efc4a0f2bccd57c782ff631"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_r3fix2_snapshot_host.py",
+      "sha256": "efb4047149b8467e2792eefee6bd831cf002d824cbb32d07ba17ccd8cb3da934"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_studio_host.py",
+      "sha256": "577166c4591cd944a7a9f999ef4b17e85244a0f2d46d366a395094fd4f4427fe"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_studio_phase1_binding.py",
+      "sha256": "58e18421c3ed672cdce0e75eb847832610fee805e9bc31eaaa919aad671c3e6d"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r2/test_workflows.py",
+      "sha256": "be5c7fd35a4107ce3ffc60e33ae8c2600f6a9b4570ea8d89ee7f00a4d670c6f3"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_agents.py",
+      "sha256": "32a964fdae755251eaa903b01ab0220dbaf5ed7bd7e9f482fd69a4f4cf3760f0"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_approved_command.py",
+      "sha256": "9a4b60486dceba3f8b5c92594346e9122fa0d632ae0ee365139e691707ed3638"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_artifact_delivery.py",
+      "sha256": "0b1dc6b119703b6f0cd386a739b1b1b43e8aa71876aee01da07233e7a41b425b"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_cli_read_bridge.py",
+      "sha256": "6ac268ef4e7f5e61c33a15e9bedf924072fac2c1df46c74d965cd28e27c8f6f7"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_cross_integration.py",
+      "sha256": "2f07b3d3141039dc4b40aeeb080789a33127c5e37847b9f0c10772fa1eeaa059"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_execution.py",
+      "sha256": "23b4986f2334a080873e377738167af48256dafd83f644afc97ddffa578d65bf"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_meegle_executor.py",
+      "sha256": "08bacea2ffcde268c8b7c73353e9c2263c632b3223875a24014d8e9d6b6c89e4"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_native_binding.py",
+      "sha256": "af8440fdc77e9037769760588c25ca73612740d2a3501287ec0d71d75585b007"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_native_inventory.py",
+      "sha256": "0f98c68242ab9cbcda99f85ca988674186e92a57d554418fa8d3694ce0153615"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_native_worker_bridge.py",
+      "sha256": "5ce6ed56f6024ac8139a05a74118188ca0c17ef9392252acded953050e255e9b"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_native_worker_claim_binding.py",
+      "sha256": "f7b2b25c31fcb8730f4c5d79ee8ff8b7c55cb4e347a36bee3cb4a165283f4a83"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_production_collection.py",
+      "sha256": "152a288b2fe0cb846f271d51acb39eae6a4973aa800e9b0ffb9276b2985cd226"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_r4fix1_proposal_atomicity.py",
+      "sha256": "f9585e04e194e50823e5e2046933b3db822f71405abee41d5129814a0bff1df2"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_r4fix1_unknown_lifecycle.py",
+      "sha256": "114da3ce5eea1f2fabdacfc5d50426c6f1cd4224f2bf44216e4a2a6ef95e9bc5"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_receiver.py",
+      "sha256": "3161a9877bbd6cadf4b51b47fb4358e254fd3f3b4a9a68f3a3c00d1a919862e3"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r4/test_service_api.py",
+      "sha256": "f3ca002cb71e30f644b664717a41eabe6eff9ad56ee1c57fb71e1ec63abc03d8"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_actions.py",
+      "sha256": "6f9804eb64d33822bb13921a250bbea28c0650dd2671e4e5c353d395a584bd7b"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_cli.py",
+      "sha256": "ff4f6f570d8c37e2afda073d5d0fdc260b27f59440ca006e033cb59c3303dbb3"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_collector.py",
+      "sha256": "d8f01ea52ca8f5f626053ea2672542ab47068a27e80fe4610be19deadedb7ee0"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_coordinator.py",
+      "sha256": "6a944e9d2984760d8f1314410dfbe95dfd7f4adabd0ea2934b382a80e2412cc5"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_host.py",
+      "sha256": "cb58bbf0510a654f63cb5d0fb50b314e9a0aed470ffe3e67376e5755f1647f6b"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_identity.py",
+      "sha256": "398d13af5e1284ff92cd35e276fe39d4617f4004e339d2d2c51fa965ab5ee75f"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_maintenance.py",
+      "sha256": "672b173a7cdcf478f588b5e19b99e2a8b85155ee5e49d30bc56dc5994f03340d"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_policy.py",
+      "sha256": "be9186f00e1f26e4503af6ce4fd7a34eb48f6ac23b2deea32add9116a869f0f4"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_reports.py",
+      "sha256": "dfd5138cfcd332468f358b554d8e7d4a56eb1c9442871676fc445a1e26193bc4"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_routine_bridge.py",
+      "sha256": "00dc76f2a349470cb7005dba284eade8ccbf1aa11f12b9aa7e58581993ca4364"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_snapshot_refresh.py",
+      "sha256": "ca78c8c140bfe69131370a65c567f4ca4038b7d56b2c357d55e0dd76afd64721"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_assistant_workbook.py",
+      "sha256": "c1f45e964b2c3dd2f303616533a7270ba4498b7450082394323ef4bcc7f96be0"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_r5_fix1_audience_access.py",
+      "sha256": "35f5fce23295f54894809f66a6ede7d958eb7adb07abe4bbf19d1faab183aefc"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r5/test_r5_fix1_continuity_capacity.py",
+      "sha256": "5274251925ee279a4ab17afa4e65db7a660e12a72b189d661e536ecca683f2db"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r6/test_evaluation.py",
+      "sha256": "d655d388b06bc99a1c46ab82d19255db592847ef120b6d3348b61733770dad27"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r6/test_fast_path_integration.py",
+      "sha256": "6ac1c849916bae8207ed4c5497d2effd76545020cf724289a1338236f1c27d57"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r6/test_improvement.py",
+      "sha256": "2c56fad90fbf4712ccee0aa7d899a2850ce6b13423e2f9aade88222f4cbece18"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r6/test_legacy_selector.py",
+      "sha256": "92c9acd65007d35c99c34cc2ff3d6548355cc9de1454cc4bb40824fcb32d882a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r6/test_native_query_regressions.py",
+      "sha256": "c1dcce5cf4c4069adfd50ea32b2f66d7c8d8eb1d9c8ae8b79a91a6f545b8cb04"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r6/test_response_guidance.py",
+      "sha256": "bc038b302d70380ca6d76bf4652a52ac87528fbf10eb5c7bddf64857c76601ac"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r6/test_retrieval.py",
+      "sha256": "95e182f79759e1a54b2fd387296fb2c81763f6edde918be4fab8b79558b75066"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_delivery_parallel.py",
+      "sha256": "964c0a1c6ae2561b6e138dae8364e21399565e2f056d603f639b7b03e73ef0cb"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_delivery_timing.py",
+      "sha256": "7e6b5828f51b0050b07d8eb909b3ae32a0dcb637e41dcf62fc4621ea7fabdec2"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_evolution.py",
+      "sha256": "15c5594a018109700e297b58df0f6b1e59092e9e0dcbff0f48c14366fb882ca9"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_evolution_host.py",
+      "sha256": "493385d9ad8a22c97b7cf8675f30a2b05342bb396d5d6eccab6a48e4868ac9d1"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_intelligence.py",
+      "sha256": "36449afab57b901afeae2468b93e48cb6c0e3b1f03b1482533259df9c036d749"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_interactive.py",
+      "sha256": "109486f3faf6fb1568d0edbc915b3f56d110b52ec646e511190169b8dcf783cf"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_interactive_source_gap.py",
+      "sha256": "b15010a809a12d6dbe3322463c5064b29159519b5b4ac367fd16782386df4109"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_quality.py",
+      "sha256": "93120a2442a5516f90de2e98dbda5529cea2567bdb943b854ee30e1a9452cf76"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_runtime_delivery_parallel.py",
+      "sha256": "e3bb7dbd7da5bb64dae4fc2b374bfa87252605353c943baed61955f8edd2c20a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r7/test_subject_boundaries.py",
+      "sha256": "29fc9d522e36e35a5c74afd8339aa1f7f576c1ae051091cb1c1a5e1375dc4199"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_autonomy.py",
+      "sha256": "b65f16d282283d7e1b218dee945fad7f991c1c8a64c939dfd2f0278ac35e45a0"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_autonomy_host.py",
+      "sha256": "c4060a2f12597eb29d435e36ab695a01a32e287844a3ccd90498f013b837799e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_cli_worker.py",
+      "sha256": "9df4cfad5c306ecf3e0df0e05c680e6807b52f0d047bf5b3bf7330b6324ad2c1"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_code_optimizer.py",
+      "sha256": "17e048fd2c89dd68142e5164d95adfad2305650262eaee7702caa16cf9f7f42e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_evolution_policy.py",
+      "sha256": "72ce27bee0b765c7318746b30937568e0f65813054fb35a598a0515291d57ce0"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_evolution_proposal_budget.py",
+      "sha256": "3091b64fde44caeafc7b106b0281f08f52fa241f425beb67c0d1b786f2804926"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_evolution_resume.py",
+      "sha256": "8f401b6657e0d4c6232ccda78b1d64a0edef0b1466e605e5c66a04d68bf721d1"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_rsi_cli.py",
+      "sha256": "30877a9588a53d5ebb5939577dea563e8dfe0077bb969865e6b0681a0a75ec2e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/r8/test_rsi_replay.py",
+      "sha256": "c215dac251a47a27f7a14b4ac49e6b8fa2ec70b404001f48e7827fb38bcbaf0d"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/test_context_continuity.py",
+      "sha256": "931fecab5d383cf558af0bac7b7214f3d0dfc3e3af2e735f188371c9e5cc64bb"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/test_gateway_core.py",
+      "sha256": "581ed14e88c70a29ea98bf60c53377678e660cf956c374d073f55efc4ba1ad3a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/test_host_integration.py",
+      "sha256": "0ef8721192bf2173875f15fda79e3a3cfc047be6063001bd56cfb7939b7021a8"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/test_loopback_e2e.py",
+      "sha256": "63fed5f6c95dc2dc7cabaf36a022a742418bb99ce6038cb72baa0681599e7e4a"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/test_metrics.py",
+      "sha256": "5b2514182b67f017dcd64b6744303971719a2a0d42b0460ce7f6c4e06683b8fa"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tests/test_transport.py",
+      "sha256": "99a9e6c40d6bce991110505bc33211c49fb37c586cb9d215ee07bf6bc28ae9f7"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/am_assistant.py",
+      "sha256": "79ad8fd3e5c7520b19a184088897c0401f75bae28c4bfa66d8286fdb40afe46b"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/am_rsi.py",
+      "sha256": "5c205526e8c59b2e25b6b1a54e5361db9b1b4aac019391cf1f22aef99faca4aa"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/create_rsi_replay_demo.py",
+      "sha256": "7fa5cb8cf1a3dbb03a2c6c17aa2996000ff1177a9eb0b7d72afcdf68442acf90"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/evaluate_assistant.py",
+      "sha256": "7fac4d0c15a88ecdb0ac0e1a8d6b5dd2d878cbe4baf4c26178e633739fd48206"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/evaluate_r7.py",
+      "sha256": "c195f173b1572709af167a60b5bc5881c3410adcb760d378a313f4f2774e229c"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/feishu_cli_read_bridge.py",
+      "sha256": "78a70e0e29b28b2a1aa857f5c65886f84bd9169d03914cf3914ae9b9dc554ec7"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/grok_receiver_tool.py",
+      "sha256": "3f75797615a4debe661e6cdec9ea5f3b0c3d6f23429e4db7f2b4ea0bf6e9e10f"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/lark_personal_inventory.py",
+      "sha256": "3f7d7af9006ce3d488b6c977e163b09f528a06769ac51e231a4ffd599e4c8e26"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/legacy_poll_guard.py",
+      "sha256": "29b7b8400fdc0b549790758dddb67f463bdc10ebfa939183787e4a6407e10fbf"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/meegle_operation_bridge.py",
+      "sha256": "df977f0e57af09caa4027df48310ccde7b19929c100faaf00529b4d7c93dba0d"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/native_worker_bridge.py",
+      "sha256": "ed896bfe2a4182a4d1154617867b23d13cf12d40c5fe14b5e109c9d5a3ece7c5"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/patch_bridge_r2.py",
+      "sha256": "a113520affb8a4d7cac1acfc7f9968376b456ce1aa609f5b1f26cab1af8398c4"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/probe_studio_reads.py",
+      "sha256": "8409e2ec42e06a587fb489af7464477f5dae64f9074c3c1a9768b2253e68f01c"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/r7_offline_adapter.py",
+      "sha256": "e4bb89a8f2d0fc2fc68db2c9ed0c1b295932dca17e77ea922e33983b6e23df3e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/run_loopback_demo.py",
+      "sha256": "a50ba21685c4d6fc978d866a0ad743d70cdb967751516b4d0a3589e0a1950937"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/run_phase1_local_check.py",
+      "sha256": "abcbb8b1141c97400adbbf655d9926dd13e2c54b34349d15bf82f8089fe05154"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/run_r2_demo.py",
+      "sha256": "1fa163345e0c36374adbbf3fdc0438c6ee342a05dcaede39f6aca3b54e149580"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/run_r4_demo.py",
+      "sha256": "bd183ec609707f2bfa5509837fdda5a5c65b4f3b92bb07f95901e6c0f7c4ad5c"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/run_receiver_worker.py",
+      "sha256": "d872842a1af85de35db657e04ab1ecedcb686c11bb96bcc192705abf5442122e"
+    },
+    {
+      "path": "runtime/am-grok-realtime/tools/verify_delivery.py",
+      "sha256": "ba3d3ed8b7bc515c06cc8ba65cf0f1ea3106612665f0ea6d94190d8471054b75"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_acceptance/diagnostics.py",
+      "sha256": "78006f7983fcf3dfb5984ce5302dcdc946c90887753d2b399b4b1d6cb318ff2d"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/__init__.py",
+      "sha256": "9384c77f40393107c8730f0b0b0b121fc3e9bcaa98fcbe64c03de7a5e68386ca"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/host.py",
+      "sha256": "e8324bbc920f17122ecaec52cf9d5fa38a102c4054257462463b55188c38496b"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/mac_probe.py",
+      "sha256": "3f1bcc13a578b0cc8e4e4185572e7579c2235d0110509b20a19db1d03a3c081b"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/native_eval.py",
+      "sha256": "e5fa18803dc315502ffdfe39bce6ff31e613e5737f51db1d3429d8a0b1058405"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/native_r5.py",
+      "sha256": "21e7df1599fc5beba27adc4fca0698680d2296ba8f49f7f57e30738156091379"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/native_synthetic.py",
+      "sha256": "962d9e1db0e438ce14216e0b09e7f8d6a5dbfc22cec9ab55e7ce75ada56f7b21"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/ollama.py",
+      "sha256": "a67a57fd7bea2d9658a73ae7904dbb7dc02c112b6ef88ab2bf71ddb6d8a8a433"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/original_r4.py",
+      "sha256": "fcc799f62d9c9b05a8b088b412835b6f12b2dd04db2bcdf353522ecd25892157"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/process_guard.py",
+      "sha256": "3f8a925c57963c9e45614be7e43c61a66ecbec357a337152dea479611276b152"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/r5_gate.py",
+      "sha256": "4793e7a83267b31d558bf8f8f2b7312e00529290cd938bc1cc82305590ae75c2"
+    },
+    {
+      "path": "runtime/am-integrated-r6/am_training_window/window.py",
+      "sha256": "bd141470790f64fe13e5fde41e97119213042313c192cd8df5895f371b4711ea"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/__init__.py",
+      "sha256": "12d66bbffd79b2b78126858e1975e1187f977ae585a10ca6a2c55506cabfc053"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/arms.py",
+      "sha256": "0187f0881c50797309da42130846d0dd7acc7d1a98a83a5abf27d63fe0338f33"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/cli.py",
+      "sha256": "06617277f31ba761097947d66e710c43c92df4b224719f909d558244172b0fac"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/collection.py",
+      "sha256": "9a259522e766ba15fe4072269c3366d4744a3460338db8dbb519ac469322f7b0"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/common.py",
+      "sha256": "2f22262cbb2f061c85211047faf94c5a7b468180d6e107788f96e3b47f40c1b5"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/dataset.py",
+      "sha256": "7c0571e0161092d17dfb5455ded078d4ca5bad19c84fed865edd5f14a5f21c1f"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/evaluation.py",
+      "sha256": "96395333452746bff282c3edb5f15eae4f43018618d4cc1530e226eb1920236e"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/holdout_gate.py",
+      "sha256": "7f87fd870cc2e70ff0bf626ad0817a90d138d14646513322021297bda1ec2ea5"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/pilot.py",
+      "sha256": "dc501d628fd048e2138a07c4b0c93843baa0bd510eae5357b47a5a96e2eddea1"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/runners.py",
+      "sha256": "5d2661dd8c6c0ed3af6c6393f8a14ff5ea201a9b310ce5aaee2b7308f5a7f787"
+    },
+    {
+      "path": "runtime/am-style-r5/src/am_style_r5/scenarios.py",
+      "sha256": "917017e011329027aa911bd17f9ea54c597c7a8bf88aa601fda8413edbad565a"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_briefing.py",
+      "sha256": "7f393c0b308564c18df5773afa1f2e32b8983731a227a9ed522ecc0826f69b8a"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_business.py",
+      "sha256": "65124e5629b8a9b06dfc2c3d7c6fc66423e3192fd5cddb606da0756da7d8c468"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_direct_query.py",
+      "sha256": "16bf3c7df2a8a537ca4828303f2fc28cf6d1b6d8ca8881522b963d8264bc4f0b"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_documents.py",
+      "sha256": "f639549c38f82a8ac4e4aea39e50313ae9ea572784c9054c28b915f95b49b9d6"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_followup_expression.py",
+      "sha256": "b85bc1725b766a4704da4035155e6c24f6b43647bfa01909edb0f74c9b96e6d2"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_followup_host.py",
+      "sha256": "2875ccdb5756cca9eae47e9e020c37071c63f76192db4432b0a001178a70c140"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_followup_recovery.py",
+      "sha256": "8017aae3d5ee22478d0fc6908af9be170d699d58426fef5ee7be37413d29db3d"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_followup_sources.py",
+      "sha256": "567557654b445c807405184b13eb8e4e4f424ef3513c3a1384f7d01321abd7bb"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_followup_state.py",
+      "sha256": "9224df88fcc3ee69f0179de3fcdc1798dfc52d623b545e2675b7e76588b114b1"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_followup_text.py",
+      "sha256": "587aaca223d5f28f5ed1d16d95ffd7db5b5002731b6d3a0c61903b3889f2f3dc"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_gateway_r2_host.py",
+      "sha256": "054d3137c4df05b08b8dc910d934babfb76f4fe30753e34dba8af9d9bc63e121"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_group_query.py",
+      "sha256": "bae5435d740ff9919050cb69b852ad2ff798da0998618c88140ca5905217dc13"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_harness_host.py",
+      "sha256": "cb2660656ce44979affae85fdfbcba87048e0a1fcb8f17842b08cd90fd099f66"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/__init__.py",
+      "sha256": "b09cf02f2b3a069b4b27c7af55b6af09b9102db44697f498924237b8aa019cad"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/adapters/__init__.py",
+      "sha256": "960eccd62661ae509bef23498c9c254f440aa1a1402df23b2f51a21f55af343f"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/adapters/docx.py",
+      "sha256": "c7284ee50ce8b0d5482d031d76eaab9c30a529e8ee1bbf7e345a8f2d7fc358bf"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/adapters/http.py",
+      "sha256": "19bc43a114dd8abf22e65eea00651e6d2fa3925da1d4c481d0c3da1d0ffef3d7"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/adapters/messages.py",
+      "sha256": "938420f77546f2eb5c5292062f8ad1462a8167914755df57427ec6bfdd11db86"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/adapters/snapshot.py",
+      "sha256": "0dff090dcf30a70649d798429ed0ea10647eed4e1d1797019d20cb18c79d236b"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/catalog.py",
+      "sha256": "4665f9ab4f16654f3b146917aec5467e137fc80e3b0044a9eb371582cd043bbb"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/cli.py",
+      "sha256": "34231861d838b04bb25d4f3e4333cf5c5e10e0d0cb21882d146ae948ad18a17d"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/demo.py",
+      "sha256": "037bd9981bbd9e9930e9f4b95c62d623909a51e4e62b025d3ddeacf096692cbb"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/document_policy.py",
+      "sha256": "8b84e12c68d8a8ada95ab14b441011bf2c1a6237afb7098f6f908a85c73f135c"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/document_snapshot.py",
+      "sha256": "c0ad533519966fc57d4a982833b89efc1acfe2d9dade5d23b895601c08c229d4"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/extraction.py",
+      "sha256": "c3939be7e8b4294a6f873d3c3c3d34a57b1f5308921735d54bd3a11a0f8c55a6"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/facts.py",
+      "sha256": "90eef1ce83fce51ad15019877e53bea95e974b3560c0c0ce7a8de6ae7054c9df"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/ingest.py",
+      "sha256": "beb3de6adc48c7a631d4a61eb2fd1c387a4a64933ed3085147f4d2bcabb6d64a"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/models.py",
+      "sha256": "2fcf389a5156f5ae3ab4c60884f5986d0674663c4dc8b50ac0815b3e9baac6d2"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/policy.py",
+      "sha256": "f09d07222c51f01173f674706068fb81c0afb789e89fadc5735ed4f4bbd28f88"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/review.py",
+      "sha256": "38c93ed59d9ce3e42ba0da7baf5f175c6c8bd2f528d3d4e3ddac99dac824d0be"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/runtime.py",
+      "sha256": "9cd66ab796c88a7da4d0af41e98034b4ce8af06e19df2731c6603a2bd74858d5"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/store.py",
+      "sha256": "5469e5d035a811b6c9a72a7d68430df74666277c74b735d23a8d2c3151bb30c4"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_info_sync/sync.py",
+      "sha256": "79e95f0f0c4b8495948ccc80f55f23dcec1b70fb99a2b9de153f4676ecacac8e"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_information.py",
+      "sha256": "659996aaa1dc2dd7681b9f91fd8d46266ac3ec8e5a2fb2f85eaf178d2892edbf"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_presentation.py",
+      "sha256": "03b8f8ce19433743b1472bcfcaa3c8768ef407886d9dc1cbd39205f89740e963"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_query.py",
+      "sha256": "6047bb54e0b0533f46d72e62b9d81447fde1a2b784e2d987b1d54e913ec90d18"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_resource_window.py",
+      "sha256": "63e96eb484bb4df536c6bbeb282dd5fb263a616945d725d967c1251f27fc601c"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_service.py",
+      "sha256": "f7e1736ab0d032c5dae34afc189094e85c33ef3452e3790d7fe67dbb952f91f6"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_training_control.py",
+      "sha256": "0792b8fd632d67733be9a6421ba1b35e056ff6407aa1d3c060117cb21b5bddd3"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_updates.py",
+      "sha256": "468a487809d4fd6e43e4812c91437d9a6f00e30d52fd73ecbb5f6e1356732804"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_ux.py",
+      "sha256": "7b113fe74ab0db89c56bbc863dbc518834735d6559eb24beb720ce97d774f63a"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/am_views.py",
+      "sha256": "b92c166930010ddb1bf1f04ccd93859e9c8ff5ae5f0ef66445b8bce113ba2e3b"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/bridge.py",
+      "sha256": "c32c0acb847d74ef15f350b6c2e745bc951b60571d85bf6485f386541d5aa8c4"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/grok_backend.py",
+      "sha256": "07d208b8dd88ed2a99df9aa4239e1af930c701d0bb59f91faa6435d745927b3e"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/grok_route.py",
+      "sha256": "5fa403a546654cb483efa7a7df67b5ebb2e5a27cbf59fdea4c2a0d7c636bb6ce"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/group_ai.py",
+      "sha256": "98a7a60edc9f2c370a049f8eafeabe213e6f186fdc0cb3907fedc5dba77132f7"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/group_ledger.py",
+      "sha256": "59de47cafe91e224c4fd6805862624e6dc13dd981b44731f9df8d5b9aab72fca"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/health.py",
+      "sha256": "7fadc53a181a5265b750d3a3fdf9ce33f0eb0ca181ed51f33a60873fe6989778"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/info_cloud.py",
+      "sha256": "85d730151982612ff96d19e4a9f61f02888f46b3dd2c23a5b6d35b0d8099844b"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/info_extraction.py",
+      "sha256": "0acf306f0569c561ef935a7d88a5da2da6dbe9fe31d3d066f0f1d036e00a9a15"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/info_readers.py",
+      "sha256": "1d047eb2e63a5e4fe0a9e9f9d135c6475a28fd7f6de334080a3f2c97ada13f37"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/info_semantics.py",
+      "sha256": "16cf119fa4b08709c3f510c2648e320d7a4e77eda11f10c2a2d8870eb075310d"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/info_sources.py",
+      "sha256": "3d4376b89d33de989792df7167afe963546dfc3d7c99e68b785c2f696fbe3368"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/project_memory.py",
+      "sha256": "455747af21050d1718b90b50ca1bdc1e6bc945d76dabb5abd2f39f16e21673dc"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/query_rules.py",
+      "sha256": "449ad3bb29ea13233e6b18bfe4618b9abcaa09c391a26fc1cb3f7d91622712dc"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/sheets_write_port.py",
+      "sha256": "0d767d8df1cf38737312902e2f4d676739961467a85b37bfa440a2d1add7b0da"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/source_views.py",
+      "sha256": "a8b66a8aa5460a0ae6d783dbf73e6c861299068d2fd91e4ec3eddaab5dbc3dc6"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_am_information.py",
+      "sha256": "e4b858d3dd1c9c97dc7498dab7b1495ec93e28ba66fe2eccaa9fdab5e65e25dc"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_bridge.py",
+      "sha256": "1e63ac24b21a6ef9ce30fbdae0217e20abc124b71220c5fe8c22566f8a93e972"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_document_snapshot_r9.py",
+      "sha256": "91d144c82270feffc510e338de1a74fe1f219ad58746d5c55a701eccbf48d406"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_document_snapshot_r9_fix2.py",
+      "sha256": "3d5a22a4601d279894aadeca60230536601a66b52d7fd463e6ae4f0689ed3029"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_group_ai.py",
+      "sha256": "e8d6155c8f41b3df08d9c926369a2a0758bedb12af8524451d240d0de0d3325e"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_group_ledger.py",
+      "sha256": "430516c514e8a62ceec347e387ba6dabd9dea7f4f9a0ec6df9fa09befd9b42a3"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_info_cloud.py",
+      "sha256": "b69e419e472b022f3349480116ec1f70b57d346b90b437f1d5c5aaf166aab09a"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_info_reader_target_scopes_r9_fix2.py",
+      "sha256": "08347891435f4ec57e189ba74db9db6c266d693ff46f5448f19420d003abf932"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_info_semantic_scopes.py",
+      "sha256": "693c238f3d6b76d5d2381fd1cff1f44e6cd2d1cdfdc5c1f831bc5a22abf73c0b"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_info_semantics.py",
+      "sha256": "fd1dbadc0e8ca09f33d655d804e3fa14eff80b989e09c9c856fa85a4a0b60592"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_info_semantics_r9.py",
+      "sha256": "eb4f1c09bf51aa11448ddcf1d17442466d3f20cdac0f533de149a3ed5f7e95a0"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_info_semantics_r9_fix1.py",
+      "sha256": "561073211b21d537c8769c924c174882369bed7db7f165a53b323c56d72cb2f6"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_info_sources.py",
+      "sha256": "898fe9101c0f9fec4315b9003aa7d1cb51a4c2c2930f6e351d7f78495a54ccc7"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_info_url_metadata.py",
+      "sha256": "2ff37ba3cf39c236f4187cc532881343a68de68fbfa05d4d7efd353ade27b20d"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/test_information_projection_r9.py",
+      "sha256": "bde28d6c3b5c0d7bb2aa6745ea27012cc05d10d228e94b91c45abd2c8a13569c"
+    },
+    {
+      "path": "runtime/local-qwen3.8/feishu-bridge/tests/test_grok_route_offline.py",
+      "sha256": "a5460527075fa8410008d1c371e31ea1efe840d0c62929aae45a5185ab61d4e8"
+    }
+  ]
+}

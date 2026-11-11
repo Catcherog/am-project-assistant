@@ -1,0 +1,21 @@
+# Pinned environment for the documented offline checks; no credentials or private sources.
+anyio==4.16.0
+certifi==2026.10.23
+charset-normalizer==3.5.2
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.20
+iniconfig==2.3.1
+lark-oapi==1.7.5
+markdown==3.11.3
+packaging==26.3
+pluggy==1.7.0
+pycryptodome==4.4.0
+pygments==2.21.0
+pytest==8.4.2
+requests==2.34.2
+requests-toolbelt==1.0.0
+typing-extensions==4.16.0
+urllib3==2.8.0
+websockets==15.0.1

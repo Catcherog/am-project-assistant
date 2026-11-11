@@ -1,0 +1,14 @@
+{
+  "phase1_gateway": {
+    "send_live": false,
+    "assistant": {
+      "enabled": false,
+      "fast_read_wait_seconds": 12,
+      "fast_reads": {
+        "enabled": true,
+        "max_snapshot_age_seconds": 60,
+        "ledger_project_refs": {}
+      }
+    }
+  }
+}

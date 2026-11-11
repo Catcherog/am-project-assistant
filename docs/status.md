@@ -1,6 +1,6 @@
 # Current publication status
 
-As of 2026-11-11 this repository is a documentation and research-preparation preview. The AM development project is iterating independently. No running installation is changed by publication work.
+As of 2026-11-11 this repository contains an R8 source preview, community documentation and research preparation. The AM development project is iterating independently. No running installation is changed by publication work.
 
 ## Evidence boundaries
 
@@ -16,11 +16,13 @@ Development reports may help identify research questions. Their test counts must
 
 ## Available now
 
-The documentation and examples can be read and their structure checked locally. The twelve synthetic examples are proposed annotation cases. They are not observations of real employees or customers, and they are not a validated test set.
+The de-identified source contains 464 selected files. In a fresh Python 3.12.13 environment, the fixed baseline and the public copy each passed the same 1807 core tests. Two local loopback demos passed with zero real model calls and zero Feishu sends. See [source verification](source-release.md) for scope and a known legacy-demo failure. Companion modules are included for source availability; this does not imply every companion feature was exercised by the core suite.
 
-## Required before a runtime release
+The twelve separate discussion examples remain proposed annotation cases. They are not observations of real employees or customers, and they are not a validated research test set.
 
-A complete source package, dependency and license inventory, safe configuration example, clean-environment installation evidence, and an accurate capability matrix are still required. The source-release checklist assigns these inputs to their owners. Availability of an internal implementation is not proof that an external contributor can install it.
+## Required before a live deployment release
+
+The versioned source and offline installation/check instructions are now published. Machine-specific launch overlays, real resources, CLI login state and production configuration are excluded. A portable live-deployment procedure, verified permission setup, independent installation and business acceptance remain required. The source-release checklist assigns those inputs to their owners.
 
 ## Known research gaps
 

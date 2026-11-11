@@ -29,6 +29,6 @@ The repository checker covers structure, local links, and several obvious sensit
 
 ## Code and license handling
 
-This preview publishes newly authored material under MIT. Unpublished runtime source and third-party material are not relicensed by this repository. Before source import, inspect file provenance, notices, bundled dependencies, generated code, and any model or dataset terms.
+This preview publishes the selected, de-identified first-party source and newly authored material under MIT. Unpublished internal material and third-party software are not relicensed by this repository. Before every source import, inspect provenance, notices, bundled dependencies, generated code, and any model or dataset terms.
 
-If removing an embedded business identifier requires changing runtime code, record the issue for the AM development owner. The publication maintainer does not change product behavior to make an export appear ready.
+For an authorized source export, identity and resource literals may be consistently replaced in an isolated public copy and its corresponding fixtures. Preserve the private transformation map, compare against the fixed baseline, and re-run affected checks. Product logic, features, and live configuration remain under the AM development owner's control. Record behavioral defects for that project instead of silently fixing them during publication.

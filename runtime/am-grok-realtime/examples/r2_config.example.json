@@ -1,0 +1,45 @@
+{
+  "_note": "Example shape only. Codex binds actual host values; never enable R1 and R2 together.",
+  "multi_ai_gateway": {
+    "enabled": false,
+    "host_factory": "your_existing_host_profile:build_ports"
+  },
+  "grok_realtime": {"enabled": false},
+  "gateway_config": {
+    "tenant_id": "READ_ACTUAL_TENANT",
+    "bot_id": "READ_ACTUAL_BOT_OPEN_ID",
+    "owner_id": "READ_ACTUAL_OWNER_OPEN_ID",
+    "owner_chat_id": "READ_ACTUAL_OWNER_AM_CHAT_ID",
+    "live_cutover_at": 0,
+    "conversation_ttl_seconds": 86400,
+    "recent_limit": 10,
+    "context_char_budget": 16000,
+    "batch_wait_seconds": 2,
+    "batch_max_items": 20,
+    "batch_max_characters": 8000,
+    "snapshot_stale_seconds": 86400,
+    "send_hold": false,
+    "dialogue_workers": 2,
+    "business_workers": 2,
+    "bot_background_jobs": false,
+    "bot_global_periodic_scan": false,
+    "ledger_write": false,
+    "worker_timeouts": {"grok_bot": 30, "grok_cli": 180, "qwen": 45, "codex_cli": 600},
+    "project_chats": {},
+    "shared_resource_chats": {}
+  },
+  "worker_bindings": {
+    "grok_bot": {
+      "adapter": "GrokBotAdapter",
+      "url": "READ_EXISTING_REALTIME_SHIM_URL",
+      "status_url": "OPTIONAL_SAME_ORIGIN_SHIM_URL_WITH_{run_id}",
+      "bearer_token": "READ_FROM_HOST_SECRET_STORAGE",
+      "memory_mode": "stateless",
+      "background_jobs": false,
+      "global_periodic_scan": false
+    },
+    "grok_cli": {"adapter": "GrokCLIAdapter", "argv": ["READ_ACTUAL_HOST_JSON_SHIM_ARGV"]},
+    "codex_cli": {"adapter": "CodexCLIAdapter", "argv": ["READ_ACTUAL_HOST_JSON_SHIM_ARGV"]},
+    "qwen": {"adapter": "QwenOllamaAdapter", "model": "KEEP_CURRENT_APPROVED_MODEL", "url": "READ_EXISTING_OLLAMA_CHAT_URL"}
+  }
+}

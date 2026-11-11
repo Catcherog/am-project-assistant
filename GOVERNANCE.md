@@ -1,6 +1,6 @@
 # Governance
 
-The repository is maintained under the Catcherog account. It is the community-facing documentation and research-preparation workspace for AM.
+The repository is maintained under the Catcherog account. It is the community-facing source, documentation, and research-preparation workspace for AM.
 
 ## Responsibilities
 
@@ -17,7 +17,7 @@ The maintainer may currently perform more than one role. That does not make self
 
 Documentation and synthetic examples can be changed through reviewed PRs. Material that changes runtime behavior must be routed to the AM development owner. Publication work must not patch a running installation.
 
-Runtime publication requires a fixed source identity, a complete dependency and license inventory, reviewed configuration examples, and a reproducible clean-environment installation procedure. See [the release checklist](docs/release-checklist.md).
+Runtime publication requires a fixed source identity, a disclosure and license review, explicit dependency information, safe examples, and a reproducible verification procedure. The R8 preview verifies core offline checks, not a production deployment. See [the release checklist](docs/release-checklist.md).
 
 A release note describes what was actually published and verified. Engineering checks, external platform delivery, business correctness, and independent user acceptance are reported separately. Failed attempts remain in the relevant private evidence history; sanitized aggregate reports must not silently remove them.
 

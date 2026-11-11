@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping make evidence-aware project assistance understandable and reproducible. This repository currently accepts documentation, translation, synthetic-case, and research-protocol contributions. Runtime changes belong to the AM development project until a reviewed runtime baseline is released here.
+Thank you for helping make evidence-aware project assistance understandable and reproducible. Documentation, translation, synthetic-case, research-protocol, and source-review contributions are welcome. Product-code changes must be reviewed by the AM development owner; the publication maintainer does not independently alter product behavior or deploy a change.
 
 ## Before opening a change
 
@@ -11,6 +11,8 @@ Use a separate branch, keep changes focused, and explain what a reader or evalua
 ```bash
 python3 tools/check_publication.py
 ```
+
+For source changes, follow the [offline checks](docs/quickstart.md), disclose the exact test scope, and retain any existing failures. Read [source-update rules](docs/source-updates.md) before importing a development revision.
 
 ## Adding an example
 

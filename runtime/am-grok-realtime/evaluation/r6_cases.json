@@ -1,0 +1,1514 @@
+{
+  "schema_version": "am-assistant-eval/1",
+  "description": "24 条主用例（12 组 × 群聊/私聊）及 6 条边界；全部是受控合成输入，全部尚未运行。",
+  "not_real_business_evidence": true,
+  "latency_budget_note": "默认只要求完成时间可测，不把未经用户确认的秒数伪装成既定验收线。可在各用例 oracle.timing_budget_s 中明确设置本轮目标。",
+  "source_fixture": {
+    "version": "synthetic-r6-v1",
+    "scope": "synthetic-r6-complete-ledger",
+    "complete": true,
+    "observed_at": "2026-11-10T15:00:00+08:00",
+    "rows": [
+      {
+        "project_id": "P-SYN-ALPHA",
+        "name": "样例甲",
+        "aliases": [
+          "A1"
+        ],
+        "owner": "样例工程师甲",
+        "progress": "样机已到，寿命测试尚未启动",
+        "blocker": "工装未到",
+        "next_step": "确认工装交期",
+        "planned_finish": "2026-11-20",
+        "test_started": false
+      },
+      {
+        "project_id": "P-SYN-BETA",
+        "name": "样例乙",
+        "aliases": [
+          "B1"
+        ],
+        "owner": "样例工程师乙",
+        "state": "waiting_review",
+        "progress": "待评审",
+        "completion_state": "marked_complete",
+        "acceptance_state": "pending"
+      }
+    ]
+  },
+  "boundary_setup": {
+    "ambiguous_alias": "为两个合成项目同时增加别名 A型号；不得自动选第一个。",
+    "source_unavailable": "源读取器注入明确读取失败；此时已有的不存在缓存无效。",
+    "partial_index": "complete=false；索引只含样例甲，但完整受控源仍有样例乙。",
+    "cancel_before_send": "合成待发送动作尚未发生外部效果；通过测试端口检查零发送。"
+  },
+  "cases": [
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA",
+          "test_started": false
+        },
+        "required_text": {
+          "progress": [
+            "样机已到"
+          ],
+          "blocker": [
+            "工装未到"
+          ],
+          "next_step": [
+            "确认工装交期"
+          ]
+        },
+        "required_qualifiers": {
+          "test_state": [
+            "尚未启动",
+            "还没开始"
+          ]
+        },
+        "forbidden_text": [
+          "没查到",
+          "不存在",
+          "测试已完成"
+        ],
+        "required_subtasks": [
+          "progress",
+          "blocker",
+          "next_step"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-01-group",
+      "suite": "primary",
+      "scenario_group": "known_project",
+      "channel": "group",
+      "intent": "project_overview",
+      "input": {
+        "text": "@AM 样例甲项目现在进展、卡点和下一步是什么？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-01-group"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA",
+          "test_started": false
+        },
+        "required_text": {
+          "progress": [
+            "样机已到"
+          ],
+          "blocker": [
+            "工装未到"
+          ],
+          "next_step": [
+            "确认工装交期"
+          ]
+        },
+        "required_qualifiers": {
+          "test_state": [
+            "尚未启动",
+            "还没开始"
+          ]
+        },
+        "forbidden_text": [
+          "没查到",
+          "不存在",
+          "测试已完成"
+        ],
+        "required_subtasks": [
+          "progress",
+          "blocker",
+          "next_step"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-01-private",
+      "suite": "primary",
+      "scenario_group": "known_project",
+      "channel": "private",
+      "intent": "project_overview",
+      "input": {
+        "text": "样例甲项目现在进展、卡点和下一步是什么？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-01-private"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA",
+          "owner": "样例工程师甲"
+        },
+        "required_text": {
+          "owner": [
+            "样例工程师甲"
+          ]
+        },
+        "forbidden_text": [
+          "没查到",
+          "不存在"
+        ],
+        "required_subtasks": [
+          "owner"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-02-group",
+      "suite": "primary",
+      "scenario_group": "project_alias",
+      "channel": "group",
+      "intent": "project_lookup",
+      "input": {
+        "text": "@AM A1 的负责人是谁？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-02-group"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA",
+          "owner": "样例工程师甲"
+        },
+        "required_text": {
+          "owner": [
+            "样例工程师甲"
+          ]
+        },
+        "forbidden_text": [
+          "没查到",
+          "不存在"
+        ],
+        "required_subtasks": [
+          "owner"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-02-private",
+      "suite": "primary",
+      "scenario_group": "project_alias",
+      "channel": "private",
+      "intent": "project_lookup",
+      "input": {
+        "text": "A1 的负责人是谁？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-02-private"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA",
+          "planned_finish": "2026-11-20"
+        },
+        "required_text": {
+          "date": [
+            "2026-11-20",
+            "11月20日"
+          ],
+          "risk": [
+            "工装未到"
+          ],
+          "next_step": [
+            "确认工装交期"
+          ]
+        },
+        "required_qualifiers": {
+          "date": [
+            "计划",
+            "预计"
+          ]
+        },
+        "forbidden_text": [
+          "已经在11月20日完成"
+        ],
+        "required_subtasks": [
+          "plan",
+          "risk",
+          "next_step"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-03-group",
+      "suite": "primary",
+      "scenario_group": "overview_and_dates",
+      "channel": "group",
+      "intent": "project_overview",
+      "input": {
+        "text": "@AM 样例甲原计划哪天完成，现在风险在哪，我要跟进什么？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-03-group"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA",
+          "planned_finish": "2026-11-20"
+        },
+        "required_text": {
+          "date": [
+            "2026-11-20",
+            "11月20日"
+          ],
+          "risk": [
+            "工装未到"
+          ],
+          "next_step": [
+            "确认工装交期"
+          ]
+        },
+        "required_qualifiers": {
+          "date": [
+            "计划",
+            "预计"
+          ]
+        },
+        "forbidden_text": [
+          "已经在11月20日完成"
+        ],
+        "required_subtasks": [
+          "plan",
+          "risk",
+          "next_step"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-03-private",
+      "suite": "primary",
+      "scenario_group": "overview_and_dates",
+      "channel": "private",
+      "intent": "project_overview",
+      "input": {
+        "text": "样例甲原计划哪天完成，现在风险在哪，我要跟进什么？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-03-private"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-BETA",
+          "state": "waiting_review"
+        },
+        "required_text": {
+          "state": [
+            "待评审"
+          ]
+        },
+        "forbidden_text": [
+          "工装未到"
+        ],
+        "required_subtasks": [
+          "corrected_project_state"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-04-group",
+      "suite": "primary",
+      "scenario_group": "correction_context",
+      "channel": "group",
+      "intent": "context_continuation",
+      "input": {
+        "text": "@AM 不是样例甲，我刚才问的是样例乙。那它现在什么状态？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-04-group"
+      },
+      "setup_ref": "conversation_fixture.correction_context"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-BETA",
+          "state": "waiting_review"
+        },
+        "required_text": {
+          "state": [
+            "待评审"
+          ]
+        },
+        "forbidden_text": [
+          "工装未到"
+        ],
+        "required_subtasks": [
+          "corrected_project_state"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-04-private",
+      "suite": "primary",
+      "scenario_group": "correction_context",
+      "channel": "private",
+      "intent": "context_continuation",
+      "input": {
+        "text": "不是样例甲，我刚才问的是样例乙。那它现在什么状态？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-04-private"
+      },
+      "setup_ref": "conversation_fixture.correction_context"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "lookup_scope": "synthetic-r6-complete-ledger"
+        },
+        "required_text": {
+          "scope": [
+            "当前台账",
+            "这份台账"
+          ],
+          "no_match": [
+            "未找到",
+            "没有匹配记录"
+          ]
+        },
+        "forbidden_text": [
+          "这个项目从未存在",
+          "全公司没有这个项目"
+        ],
+        "required_subtasks": [
+          "bounded_no_match"
+        ],
+        "expected_retrieval_status": [
+          "NO_MATCH_CONFIRMED"
+        ]
+      },
+      "case_id": "R6-05-group",
+      "suite": "primary",
+      "scenario_group": "confirmed_no_match",
+      "channel": "group",
+      "intent": "project_lookup",
+      "input": {
+        "text": "@AM 查一下样例丙项目。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-05-group"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "lookup_scope": "synthetic-r6-complete-ledger"
+        },
+        "required_text": {
+          "scope": [
+            "当前台账",
+            "这份台账"
+          ],
+          "no_match": [
+            "未找到",
+            "没有匹配记录"
+          ]
+        },
+        "forbidden_text": [
+          "这个项目从未存在",
+          "全公司没有这个项目"
+        ],
+        "required_subtasks": [
+          "bounded_no_match"
+        ],
+        "expected_retrieval_status": [
+          "NO_MATCH_CONFIRMED"
+        ]
+      },
+      "case_id": "R6-05-private",
+      "suite": "primary",
+      "scenario_group": "confirmed_no_match",
+      "channel": "private",
+      "intent": "project_lookup",
+      "input": {
+        "text": "查一下样例丙项目。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-05-private"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "effort": [
+            "投入",
+            "工作量"
+          ],
+          "duration": [
+            "跨度",
+            "日历时间",
+            "持续时间"
+          ]
+        },
+        "forbidden_text": [
+          "请先提供项目编号才能回答"
+        ],
+        "required_subtasks": [
+          "explain_effort",
+          "explain_duration"
+        ]
+      },
+      "case_id": "R6-06-group",
+      "suite": "primary",
+      "scenario_group": "general_question",
+      "channel": "group",
+      "intent": "general_question",
+      "input": {
+        "text": "@AM 如果估分是人天，排期是开始到结束的时间段，应该怎么区分？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-06-group"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "effort": [
+            "投入",
+            "工作量"
+          ],
+          "duration": [
+            "跨度",
+            "日历时间",
+            "持续时间"
+          ]
+        },
+        "forbidden_text": [
+          "请先提供项目编号才能回答"
+        ],
+        "required_subtasks": [
+          "explain_effort",
+          "explain_duration"
+        ]
+      },
+      "case_id": "R6-06-private",
+      "suite": "primary",
+      "scenario_group": "general_question",
+      "channel": "private",
+      "intent": "general_question",
+      "input": {
+        "text": "如果估分是人天，排期是开始到结束的时间段，应该怎么区分？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-06-private"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "blocker": [
+            "工装未到"
+          ],
+          "report": [
+            "跟进报告"
+          ]
+        },
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA"
+        },
+        "required_subtasks": [
+          "quick_blocker",
+          "followup_report"
+        ],
+        "required_assertions": [
+          "quick_result_before_heavy_finish",
+          "all_subtasks_reported"
+        ],
+        "required_artifact_kinds": [
+          "report"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-07-group",
+      "suite": "primary",
+      "scenario_group": "mixed_light_heavy",
+      "channel": "group",
+      "intent": "compound_request",
+      "input": {
+        "text": "@AM 先告诉我样例甲的卡点，再帮我整理一份跟进报告。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-07-group"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "blocker": [
+            "工装未到"
+          ],
+          "report": [
+            "跟进报告"
+          ]
+        },
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA"
+        },
+        "required_subtasks": [
+          "quick_blocker",
+          "followup_report"
+        ],
+        "required_assertions": [
+          "quick_result_before_heavy_finish",
+          "all_subtasks_reported"
+        ],
+        "required_artifact_kinds": [
+          "report"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-07-private",
+      "suite": "primary",
+      "scenario_group": "mixed_light_heavy",
+      "channel": "private",
+      "intent": "compound_request",
+      "input": {
+        "text": "先告诉我样例甲的卡点，再帮我整理一份跟进报告。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-07-private"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "new_date": [
+            "11月25日",
+            "2026-11-25"
+          ]
+        },
+        "required_facts": {
+          "draft_parent_id": "SYN-DRAFT-V1",
+          "revision_date": "2026-11-25"
+        },
+        "required_subtasks": [
+          "read_prior_draft",
+          "revise_date",
+          "provide_updated_artifact"
+        ],
+        "required_assertions": [
+          "only_requested_content_changed",
+          "no_business_plan_write",
+          "new_artifact_differs_from_previous"
+        ],
+        "required_artifact_kinds": [
+          "docx"
+        ]
+      },
+      "case_id": "R6-08-group",
+      "suite": "primary",
+      "scenario_group": "document_revision",
+      "channel": "group",
+      "intent": "document_revision",
+      "input": {
+        "text": "@AM 把我上一份样例甲报告中的计划日期改成11月25日，其他内容保留。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-08-group"
+      },
+      "setup_ref": "conversation_fixture.document_revision"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "new_date": [
+            "11月25日",
+            "2026-11-25"
+          ]
+        },
+        "required_facts": {
+          "draft_parent_id": "SYN-DRAFT-V1",
+          "revision_date": "2026-11-25"
+        },
+        "required_subtasks": [
+          "read_prior_draft",
+          "revise_date",
+          "provide_updated_artifact"
+        ],
+        "required_assertions": [
+          "only_requested_content_changed",
+          "no_business_plan_write",
+          "new_artifact_differs_from_previous"
+        ],
+        "required_artifact_kinds": [
+          "docx"
+        ]
+      },
+      "case_id": "R6-08-private",
+      "suite": "primary",
+      "scenario_group": "document_revision",
+      "channel": "private",
+      "intent": "document_revision",
+      "input": {
+        "text": "把我上一份样例甲报告中的计划日期改成11月25日，其他内容保留。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-08-private"
+      },
+      "setup_ref": "conversation_fixture.document_revision"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "first": [
+            "第一项"
+          ],
+          "second": [
+            "第二项"
+          ],
+          "pending": [
+            "未发送",
+            "保留待确认"
+          ]
+        },
+        "required_facts": {
+          "approved_action_ids": [
+            "SYN-ACTION-1"
+          ]
+        },
+        "required_subtasks": [
+          "execute_approved_one",
+          "preserve_unapproved_two",
+          "report_result"
+        ],
+        "required_assertions": [
+          "approved_effect_count_one",
+          "unapproved_effect_count_zero"
+        ]
+      },
+      "case_id": "R6-09-group",
+      "suite": "primary",
+      "scenario_group": "partial_action_approval",
+      "channel": "group",
+      "intent": "followup_action",
+      "input": {
+        "text": "@AM 两个跟进建议里，只批准给样例工程师甲的第一项，第二项先不发。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-09-group"
+      },
+      "setup_ref": "conversation_fixture.partial_action_approval"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "first": [
+            "第一项"
+          ],
+          "second": [
+            "第二项"
+          ],
+          "pending": [
+            "未发送",
+            "保留待确认"
+          ]
+        },
+        "required_facts": {
+          "approved_action_ids": [
+            "SYN-ACTION-1"
+          ]
+        },
+        "required_subtasks": [
+          "execute_approved_one",
+          "preserve_unapproved_two",
+          "report_result"
+        ],
+        "required_assertions": [
+          "approved_effect_count_one",
+          "unapproved_effect_count_zero"
+        ]
+      },
+      "case_id": "R6-09-private",
+      "suite": "primary",
+      "scenario_group": "partial_action_approval",
+      "channel": "private",
+      "intent": "followup_action",
+      "input": {
+        "text": "两个跟进建议里，只批准给样例工程师甲的第一项，第二项先不发。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-09-private"
+      },
+      "setup_ref": "conversation_fixture.partial_action_approval"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "task": [
+            "SYN-TASK-1"
+          ]
+        },
+        "required_facts": {
+          "task_id": "SYN-TASK-1"
+        },
+        "required_subtasks": [
+          "continue_existing_task"
+        ],
+        "required_assertions": [
+          "one_task_for_same_event",
+          "one_final_reply",
+          "no_duplicate_effect"
+        ]
+      },
+      "case_id": "R6-10-group",
+      "suite": "primary",
+      "scenario_group": "idempotent_continuation",
+      "channel": "group",
+      "intent": "task_continuation",
+      "input": {
+        "text": "@AM 继续任务 SYN-TASK-1；同一条消息被平台重复投递了一次。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-10-group"
+      },
+      "setup_ref": "conversation_fixture.idempotent_continuation"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "task": [
+            "SYN-TASK-1"
+          ]
+        },
+        "required_facts": {
+          "task_id": "SYN-TASK-1"
+        },
+        "required_subtasks": [
+          "continue_existing_task"
+        ],
+        "required_assertions": [
+          "one_task_for_same_event",
+          "one_final_reply",
+          "no_duplicate_effect"
+        ]
+      },
+      "case_id": "R6-10-private",
+      "suite": "primary",
+      "scenario_group": "idempotent_continuation",
+      "channel": "private",
+      "intent": "task_continuation",
+      "input": {
+        "text": "继续任务 SYN-TASK-1；同一条消息被平台重复投递了一次。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-10-private"
+      },
+      "setup_ref": "conversation_fixture.idempotent_continuation"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "marked": [
+            "已标记完成"
+          ],
+          "acceptance": [
+            "不等于已验收",
+            "验收仍待核实",
+            "尚未验收"
+          ]
+        },
+        "required_subtasks": [
+          "correct_reply",
+          "record_feedback"
+        ],
+        "required_assertions": [
+          "feedback_recorded",
+          "no_fact_from_self_score",
+          "no_inline_training"
+        ]
+      },
+      "case_id": "R6-11-group",
+      "suite": "primary",
+      "scenario_group": "feedback_background",
+      "channel": "group",
+      "intent": "feedback",
+      "input": {
+        "text": "@AM 刚才你把“已标记完成”说成“已验收”了，请更正，以后别混淆。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-11-group"
+      },
+      "setup_ref": "conversation_fixture.feedback_background"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "marked": [
+            "已标记完成"
+          ],
+          "acceptance": [
+            "不等于已验收",
+            "验收仍待核实",
+            "尚未验收"
+          ]
+        },
+        "required_subtasks": [
+          "correct_reply",
+          "record_feedback"
+        ],
+        "required_assertions": [
+          "feedback_recorded",
+          "no_fact_from_self_score",
+          "no_inline_training"
+        ]
+      },
+      "case_id": "R6-11-private",
+      "suite": "primary",
+      "scenario_group": "feedback_background",
+      "channel": "private",
+      "intent": "feedback",
+      "input": {
+        "text": "刚才你把“已标记完成”说成“已验收”了，请更正，以后别混淆。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-11-private"
+      },
+      "setup_ref": "conversation_fixture.feedback_background"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA",
+          "owner": "样例工程师甲"
+        },
+        "required_text": {
+          "owner": [
+            "样例工程师甲"
+          ]
+        },
+        "required_subtasks": [
+          "owner"
+        ],
+        "required_assertions": [
+          "short_request_not_queued_behind_heavy",
+          "no_other_conversation_content"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-12-group",
+      "suite": "primary",
+      "scenario_group": "concurrent_fast_question",
+      "channel": "group",
+      "intent": "project_lookup",
+      "input": {
+        "text": "@AM 正在整理长报告时，再查一下样例甲的负责人。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-EVENT-12-group"
+      },
+      "setup_ref": "conversation_fixture.concurrent_fast_question"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-ALPHA",
+          "owner": "样例工程师甲"
+        },
+        "required_text": {
+          "owner": [
+            "样例工程师甲"
+          ]
+        },
+        "required_subtasks": [
+          "owner"
+        ],
+        "required_assertions": [
+          "short_request_not_queued_behind_heavy",
+          "no_other_conversation_content"
+        ],
+        "expected_retrieval_status": [
+          "FOUND"
+        ]
+      },
+      "case_id": "R6-12-private",
+      "suite": "primary",
+      "scenario_group": "concurrent_fast_question",
+      "channel": "private",
+      "intent": "project_lookup",
+      "input": {
+        "text": "正在整理长报告时，再查一下样例甲的负责人。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-EVENT-12-private"
+      },
+      "setup_ref": "conversation_fixture.concurrent_fast_question"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "clarification"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "candidate_count": 2
+        },
+        "required_text": {
+          "candidate_a": [
+            "样例甲"
+          ],
+          "candidate_b": [
+            "样例乙"
+          ],
+          "clarify": [
+            "哪个",
+            "哪一个"
+          ]
+        },
+        "required_subtasks": [
+          "ask_project_disambiguation"
+        ],
+        "expected_retrieval_status": [
+          "AMBIGUOUS"
+        ],
+        "required_assertions": [
+          "did_not_choose_first_candidate"
+        ]
+      },
+      "case_id": "R6-B01-group",
+      "suite": "boundary",
+      "scenario_group": "ambiguous_alias",
+      "channel": "group",
+      "intent": "boundary_ambiguous_alias",
+      "input": {
+        "text": "A型号现在怎么样？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-BOUNDARY-01"
+      },
+      "setup_ref": "boundary_setup.ambiguous_alias"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "unavailable": [
+            "暂时无法读取",
+            "来源暂不可用"
+          ]
+        },
+        "forbidden_text": [
+          "没查到",
+          "不存在",
+          "台账没记录"
+        ],
+        "required_subtasks": [
+          "explain_source_failure"
+        ],
+        "expected_retrieval_status": [
+          "SOURCE_UNAVAILABLE"
+        ]
+      },
+      "case_id": "R6-B02-private",
+      "suite": "boundary",
+      "scenario_group": "source_unavailable",
+      "channel": "private",
+      "intent": "boundary_source_unavailable",
+      "input": {
+        "text": "样例甲当前进展？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-BOUNDARY-02"
+      },
+      "setup_ref": "boundary_setup.source_unavailable"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "incomplete": [
+            "不完整",
+            "尚未采集完"
+          ]
+        },
+        "forbidden_text": [
+          "不存在",
+          "没有这个项目"
+        ],
+        "required_subtasks": [
+          "explain_incomplete_coverage"
+        ],
+        "expected_retrieval_status": [
+          "INCOMPLETE"
+        ]
+      },
+      "case_id": "R6-B03-group",
+      "suite": "boundary",
+      "scenario_group": "partial_index",
+      "channel": "group",
+      "intent": "boundary_partial_index",
+      "input": {
+        "text": "找一下这份尚未采集完整台账中的样例乙。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-BOUNDARY-03"
+      },
+      "setup_ref": "boundary_setup.partial_index"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_facts": {
+          "project_id": "P-SYN-BETA",
+          "completion_state": "marked_complete",
+          "acceptance_state": "pending"
+        },
+        "required_text": {
+          "marked": [
+            "已标记完成"
+          ]
+        },
+        "required_qualifiers": {
+          "acceptance": [
+            "尚未验收",
+            "验收待确认"
+          ]
+        },
+        "forbidden_text": [
+          "已正式验收",
+          "已经通过验收"
+        ],
+        "required_subtasks": [
+          "distinguish_marked_from_accepted"
+        ]
+      },
+      "case_id": "R6-B04-private",
+      "suite": "boundary",
+      "scenario_group": "marked_complete",
+      "channel": "private",
+      "intent": "boundary_marked_complete",
+      "input": {
+        "text": "样例乙已经正式验收了吗？",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-BOUNDARY-04"
+      },
+      "setup_ref": "source_fixture"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "answer"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "cancelled": [
+            "已取消",
+            "已撤销"
+          ]
+        },
+        "required_subtasks": [
+          "cancel_pending_action",
+          "report_cancellation"
+        ],
+        "required_assertions": [
+          "pending_action_cancelled",
+          "external_effect_count_zero"
+        ]
+      },
+      "case_id": "R6-B05-group",
+      "suite": "boundary",
+      "scenario_group": "cancel_before_send",
+      "channel": "group",
+      "intent": "boundary_cancel_before_send",
+      "input": {
+        "text": "刚才那条跟进先取消，还没发就别发了。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-GROUP",
+        "origin_event_id": "SYN-BOUNDARY-05"
+      },
+      "setup_ref": "boundary_setup.cancel_before_send"
+    },
+    {
+      "source_version": "synthetic-r6-v1",
+      "status": "not_run",
+      "data_origin": "controlled_synthetic",
+      "oracle": {
+        "allowed_kinds": [
+          "clarification"
+        ],
+        "required_metrics": [
+          "completion_s"
+        ],
+        "required_text": {
+          "clarify": [
+            "想法",
+            "内容"
+          ],
+          "next": [
+            "告诉我",
+            "说一下",
+            "发给我"
+          ]
+        },
+        "forbidden_text": [
+          "不支持的意图",
+          "必须提供项目编号"
+        ],
+        "required_subtasks": [
+          "ask_missing_idea"
+        ]
+      },
+      "case_id": "R6-B06-private",
+      "suite": "boundary",
+      "scenario_group": "general_unknown_intent",
+      "channel": "private",
+      "intent": "boundary_general_unknown_intent",
+      "input": {
+        "text": "我还没想清楚，你帮我把这个模糊想法整理成可以讨论的两三点。",
+        "actor_id": "SYN-OWNER",
+        "conversation_id": "SYN-PRIVATE",
+        "origin_event_id": "SYN-BOUNDARY-06"
+      },
+      "setup_ref": "source_fixture"
+    }
+  ],
+  "conversation_fixture": {
+    "actor": {
+      "actor_id": "SYN-OWNER",
+      "role": "owner",
+      "department": "DEMO"
+    },
+    "correction_context": [
+      {
+        "role": "user",
+        "text": "查一下样例甲的状态"
+      },
+      {
+        "role": "assistant",
+        "text": "样例甲样机已到，寿命测试尚未启动。"
+      }
+    ],
+    "document_revision": {
+      "draft_id": "SYN-DRAFT-V1",
+      "project_id": "P-SYN-ALPHA",
+      "text": "样例甲跟进报告\n计划日期：2026-11-20\n进展：样机已到，寿命测试尚未启动\n卡点：工装未到\n下一步：确认工装交期"
+    },
+    "partial_action_approval": [
+      {
+        "action_id": "SYN-ACTION-1",
+        "recipient_id": "SYN-ENGINEER-A",
+        "state": "awaiting_approval",
+        "text": "请确认样例甲工装交期。"
+      },
+      {
+        "action_id": "SYN-ACTION-2",
+        "recipient_id": "SYN-ENGINEER-B",
+        "state": "awaiting_approval",
+        "text": "请确认样例乙评审时间。"
+      }
+    ],
+    "idempotent_continuation": {
+      "existing_task_id": "SYN-TASK-1",
+      "state": "in_progress",
+      "delivery_sequence": "同一 origin_event_id 的原始事件依次投递两次。"
+    },
+    "feedback_background": {
+      "previous_reply": "样例乙已正式验收。",
+      "source_truth": "已标记完成；正式验收仍待确认"
+    },
+    "concurrent_fast_question": {
+      "heavy_task_id": "SYN-HEAVY-1",
+      "heavy_task_state": "running",
+      "other_conversation_secret": "SYN-OTHER-CHAT-CONTENT",
+      "measurement": "保存两个请求的认领和完成区间，不用固定 sleep 假造提速。"
+    }
+  },
+  "execution_status": "not_run",
+  "execution_status_note": "30个业务场景仍是计划用例；pytest与example_*.jsonl格式自检不构成真实业务、模型、平台或手机验收。",
+  "format_examples": {
+    "cases": "evaluation/example_cases.jsonl",
+    "records": "evaluation/example_offline_records.jsonl",
+    "separate_from_planned_30_cases": true,
+    "actual_assistant_run": false
+  }
+}
