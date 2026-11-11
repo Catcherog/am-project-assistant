@@ -1,0 +1,40 @@
+{
+  "environment": {
+    "python": "3.12.13",
+    "platform": "macOS arm64",
+    "dependencies": "requirements-test.txt"
+  },
+  "core_command": "python -m pytest -q tests (cwd runtime/am-grok-realtime)",
+  "baseline": {
+    "tests": 1807,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "public_source": {
+    "tests": 1807,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "normalized_case_identity_match": true,
+  "warnings_per_run": 2,
+  "loopback": {
+    "p2p": "PASS",
+    "group": "PASS"
+  },
+  "real_model_calls": 0,
+  "real_feishu_sends": 0,
+  "legacy_r2_demo": {
+    "baseline": "KeyError: artifacts",
+    "public_source": "KeyError: artifacts",
+    "fixed_by_publication_work": false
+  },
+  "gitleaks": {
+    "version": "8.30.1",
+    "raw_findings": 3,
+    "reviewed_non_secret_expressions": 3,
+    "unresolved_findings": 0
+  },
+  "business_acceptance": "not established by this offline source release"
+}

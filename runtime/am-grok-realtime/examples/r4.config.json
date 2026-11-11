@@ -1,0 +1,56 @@
+{
+  "multi_ai_gateway": {
+    "enabled": false,
+    "implementation": "phase1",
+    "host_factory": "integration.full_runtime:build_ports"
+  },
+  "phase1_gateway": {
+    "database_name": "gateway-r4.sqlite3",
+    "artifact_directory": "r4-artifacts",
+    "send_live": false,
+    "dispatch_enabled": true,
+    "live_cutover_at": null,
+    "queue_limit": 32,
+    "dispatch_deadline_seconds": 120,
+    "execution_deadline_seconds": 600,
+    "classification_budget_seconds": 6,
+    "group_chat_ids": [],
+    "project_chats": {},
+    "personal_read_enabled": false,
+    "personal_assistance_enabled": false,
+    "personal_identity": "owner_user",
+    "personal_chat_ids": [],
+    "personal_read_argv": [],
+    "personal_inventory_argv": [],
+    "classifier": {
+      "enabled": false,
+      "binary": "/absolute/verified/path/to/codex",
+      "model": "gpt-6.1-terra"
+    },
+    "grok_bot": {
+      "mode": "local_pull",
+      "worker_lease_seconds": 60,
+      "wake_url": null,
+      "wake_token_env": "AM_GROK_WAKE_TOKEN",
+      "worker_api": {
+        "host": "127.0.0.1",
+        "port": 8766,
+        "admin_token_env": "AM_GATEWAY_RECEIVER_ADMIN_TOKEN",
+        "worker_token_env": "AM_RECEIVER_WORKER_TOKEN"
+      }
+    },
+    "control_api": {
+      "enabled": true,
+      "host": "127.0.0.1",
+      "port": 8767,
+      "token_env": "AM_GATEWAY_OPERATOR_TOKEN"
+    },
+    "agents": {
+      "document_agent": {"enabled": true, "model": null},
+      "project_agent": {"enabled": true, "model": null},
+      "code_agent": {"enabled": true, "model": null}
+    },
+    "business_executor_factory": null,
+    "policy_version": 1
+  }
+}

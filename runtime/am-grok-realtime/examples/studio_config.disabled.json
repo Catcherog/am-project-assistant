@@ -1,0 +1,20 @@
+{
+  "_note": "Disabled candidate only. Verification flags require real evidence; setting them does not establish upstream capability.",
+  "multi_ai_gateway": {
+    "enabled": false,
+    "host_factory": "integration.studio_host:build_ports",
+    "send_live": false,
+    "live_cutover_at": null,
+    "group_chat_ids": [],
+    "project_chats": {},
+    "shared_resource_chats": {},
+    "grok_bot": {
+      "url": null,
+      "status_url": null,
+      "token_file": null,
+      "native_memory_verified": false
+    },
+    "grok_cli": {"argv": [], "isolation_verified": false},
+    "codex_cli": {"argv": [], "isolation_verified": false}
+  }
+}

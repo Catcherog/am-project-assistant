@@ -1,0 +1,15 @@
+{
+  "source_relative_path": "FS-AGENT-GROK-POC-20261017-01_R1_Studio/src/am_harness/controls.py",
+  "source_sha256": "25b8458ecffb59b99bf8bfa1034933310bb6871d9614138e754d148c87ea08a7",
+  "extraction": "verbatim AST node source spans, retaining decorators",
+  "declarations": [
+    "ControlCommand",
+    "_CANCEL_CURRENT",
+    "_CANCEL_ID",
+    "_REVISE",
+    "_REVISE_ID",
+    "parse_control"
+  ],
+  "fixture_sha256": "51329c35050e1b35cea600f84bcdeebe672ae77bbf9ab0e0bdc07787a159c6c8",
+  "production_use": false
+}

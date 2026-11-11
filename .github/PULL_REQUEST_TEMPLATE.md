@@ -13,4 +13,4 @@ Describe the concrete problem and what the published material will let a reader 
 - [ ] No credentials, private paths, real platform identifiers, or confidential records are included.
 - [ ] Proposed expectations and experiments are not described as independently validated results.
 - [ ] I have described any AI assistance and the review actually performed.
-- [ ] This change does not modify AM runtime behavior or deployment.
+- [ ] Runtime changes, if any, are identified for AM development-owner review; this PR does not deploy a live service.

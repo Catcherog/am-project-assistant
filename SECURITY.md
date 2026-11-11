@@ -1,6 +1,6 @@
 # Security and sensitive information
 
-This preview contains documentation and synthetic examples, not a supported production runtime.
+This repository contains an R8 source preview, documentation and synthetic examples. It is not a production deployment package with a support or response-time guarantee.
 
 Please report suspected credentials, personal information, confidential business material, or exploitable publication tooling through [GitHub private vulnerability reporting](https://github.com/Catcherog/am-project-assistant/security/advisories/new). Avoid public issues and PR attachments containing the suspected material.
 

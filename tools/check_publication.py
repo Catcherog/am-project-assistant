@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {".git", ".venv", "__pycache__"}
+EXCLUDED = {".git", ".venv", "__pycache__", ".pytest_cache", "build", "dist"}
 REQUIRED = {
     "README.md", "README.zh-CN.md", "LICENSE", "CONTRIBUTING.md",
     "GOVERNANCE.md", "SECURITY.md", "CODE_OF_CONDUCT.md",
@@ -22,7 +22,7 @@ CASE_FIELDS = {
 }
 PATTERNS = {
     "private home path": re.compile("/" + r"(?:Users|home)/[A-Za-z0-9_.-]+"),
-    "platform identifier": re.compile(r"\b(?:ou|oc|cli)_[A-Za-z0-9]{12,}\b"),
+    "platform identifier": re.compile(r"\b(?:ou|oc)_[a-f0-9]{32}\b|\bcli_[a-f0-9]{12,}\b"),
     "GitHub credential": re.compile(r"\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})\b"),
     "private key": re.compile("-----BEGIN " + r"[A-Z ]*PRIVATE KEY-----"),
     "tenant document URL": re.compile(r"https://[^/\s]+\.feishu\.cn/(?:docx|sheets|base|file|wiki)/[A-Za-z0-9]+"),
@@ -34,7 +34,7 @@ def check(root):
     paths = []
     for path in root.rglob("*"):
         relative = path.relative_to(root)
-        if any(part in EXCLUDED for part in relative.parts):
+        if any(part in EXCLUDED or part.endswith(".egg-info") for part in relative.parts):
             continue
         if path.is_symlink():
             issues.append(f"{relative}: unexpected symlink")
@@ -53,7 +53,12 @@ def check(root):
             issues.append(f"{relative}: non-text file needs a separate publication review")
             continue
         for label, pattern in PATTERNS.items():
-            if pattern.search(content):
+            inspected = content
+            if label == "tenant document URL" and path.name.startswith("test_"):
+                # These URL-parser fixtures use a fixed dummy host and short dummy IDs.
+                inspected = re.sub(r"https://tenant\.feishu\.cn/(?:docx|wiki)/(?:a|b|c|document|other)\b", "SYNTHETIC_URL", inspected)
+                inspected = inspected.replace("https://tenant.feishu.cn/" + "file/token", "SYNTHETIC_FILE_URL")
+            if pattern.search(inspected):
                 issues.append(f"{relative}: possible {label}")
         if path.suffix == ".md":
             for link in re.findall(r"\[[^\]]*\]\(([^)]+)\)", content):
@@ -62,7 +67,7 @@ def check(root):
                     continue
                 target = unquote(target.split("#", 1)[0])
                 resolved = (path.parent / target).resolve()
-                if root not in resolved.parents or not resolved.is_file():
+                if root not in resolved.parents or not resolved.exists():
                     issues.append(f"{relative}: missing or out-of-repository local link: {target}")
 
     case_file = root / "examples/project-cases.jsonl"

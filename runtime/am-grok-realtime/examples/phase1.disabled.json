@@ -1,0 +1,21 @@
+{
+  "multi_ai_gateway": {
+    "enabled": false,
+    "implementation": "phase1",
+    "host_factory": null,
+    "send_live": false,
+    "grok_bot": {
+      "wake": "existing webhook; only wake capability verified",
+      "durable_receive": null,
+      "result_return": null,
+      "memory_isolation": null
+    },
+    "classification": {
+      "model": "gpt-6.1-terra",
+      "transport": "optional installed Codex CLI",
+      "budget_seconds": 6,
+      "max_transient_retries": 1,
+      "status": "synthetic channel verified; 6 second cold budget not met"
+    }
+  }
+}

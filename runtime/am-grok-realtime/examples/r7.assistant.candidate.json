@@ -1,0 +1,45 @@
+{
+  "_usage": "候选配置片段；合并到实际既有 phase1_gateway/multi_ai_gateway，保留账户与权限。send_live=false。15秒是调用上限，非体验目标。",
+  "phase1_gateway": {
+    "send_live": false,
+    "interactive": {
+      "enabled": true,
+      "model": {
+        "kind": "host_qwen"
+      },
+      "workers": 1,
+      "timeout_seconds": 15,
+      "max_tokens": 1400,
+      "max_context_bytes": 24000
+    },
+    "assistant": {
+      "project_answer_mode": "semantic",
+      "delivery_workers": 4,
+      "fast_reads": {
+        "max_snapshot_age_seconds": 60
+      },
+      "intelligence": {
+        "enabled": false,
+        "model_id": "host_qwen",
+        "layout": "paragraph",
+        "max_chars": 400,
+        "model_budget_seconds": 1.5,
+        "cache_ttl_seconds": 60
+      },
+      "evolution": {
+        "enabled": true,
+        "scope": "assistant_r7_semantic",
+        "automatic_config_activation": false,
+        "evaluation_layer": "real_model",
+        "interval_seconds": 1800,
+        "budget": {
+          "max_calls": 300,
+          "max_seconds": 600,
+          "per_call_seconds": 15,
+          "repetitions": 1
+        }
+      }
+    }
+  }
+}
+

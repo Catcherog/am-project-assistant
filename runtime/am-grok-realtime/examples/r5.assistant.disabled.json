@@ -1,0 +1,18 @@
+{
+  "phase1_gateway": {
+    "send_live": false,
+    "assistant": {
+      "enabled": false,
+      "owner_display_name": "示例负责人",
+      "demo_department_ids": [],
+      "leader_user_ids": [],
+      "protected_person_ids": [],
+      "protected_name_aliases": ["示例主管甲", "示例主管乙"],
+      "owner_project_ids": [],
+      "user_project_ids": {},
+      "project_names": {},
+      "conversation_idle_seconds": 600,
+      "routine_fields": {}
+    }
+  }
+}
